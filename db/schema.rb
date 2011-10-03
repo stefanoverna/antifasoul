@@ -160,6 +160,16 @@ ActiveRecord::Schema.define(:version => 20110314192118) do
     t.datetime "updated_at"
   end
 
+  create_table "option_type_translations", :force => true do |t|
+    t.integer  "option_type_id"
+    t.string   "locale"
+    t.string   "presentation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "option_type_translations", ["option_type_id"], :name => "index_option_type_translations_on_option_type_id"
+
   create_table "option_types", :force => true do |t|
     t.string   "name",         :limit => 100
     t.string   "presentation", :limit => 100
@@ -172,6 +182,16 @@ ActiveRecord::Schema.define(:version => 20110314192118) do
     t.integer "prototype_id"
     t.integer "option_type_id"
   end
+
+  create_table "option_value_translations", :force => true do |t|
+    t.integer  "option_value_id"
+    t.string   "locale"
+    t.string   "presentation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "option_value_translations", ["option_value_id"], :name => "index_7e3c65098a7438807f84e39113d17ccde29e3ec8"
 
   create_table "option_values", :force => true do |t|
     t.integer  "option_type_id"
@@ -292,6 +312,19 @@ ActiveRecord::Schema.define(:version => 20110314192118) do
   add_index "product_scopes", ["name"], :name => "index_product_scopes_on_name"
   add_index "product_scopes", ["product_group_id"], :name => "index_product_scopes_on_product_group_id"
 
+  create_table "product_translations", :force => true do |t|
+    t.integer  "product_id"
+    t.string   "locale"
+    t.text     "description"
+    t.text     "meta_description"
+    t.text     "meta_keywords"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "product_translations", ["product_id"], :name => "index_product_translations_on_product_id"
+
   create_table "products", :force => true do |t|
     t.string   "name",                 :default => "", :null => false
     t.text     "description"
@@ -372,6 +405,26 @@ ActiveRecord::Schema.define(:version => 20110314192118) do
     t.integer "prototype_id"
     t.integer "property_id"
   end
+
+  create_table "property_translations", :force => true do |t|
+    t.integer  "property_id"
+    t.string   "locale"
+    t.string   "presentation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "property_translations", ["property_id"], :name => "index_property_translations_on_property_id"
+
+  create_table "prototype_translations", :force => true do |t|
+    t.integer  "prototype_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "prototype_translations", ["prototype_id"], :name => "index_prototype_translations_on_prototype_id"
 
   create_table "prototypes", :force => true do |t|
     t.string   "name"
@@ -463,11 +516,32 @@ ActiveRecord::Schema.define(:version => 20110314192118) do
     t.integer  "tax_category_id"
   end
 
+  create_table "taxon_translations", :force => true do |t|
+    t.integer  "taxon_id"
+    t.string   "locale"
+    t.text     "description"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "taxon_translations", ["taxon_id"], :name => "index_taxon_translations_on_taxon_id"
+
   create_table "taxonomies", :force => true do |t|
     t.string   "name",       :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "taxonomy_translations", :force => true do |t|
+    t.integer  "taxonomy_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "taxonomy_translations", ["taxonomy_id"], :name => "index_taxonomy_translations_on_taxonomy_id"
 
   create_table "taxons", :force => true do |t|
     t.integer  "taxonomy_id",                      :null => false
