@@ -6,6 +6,23 @@ GIT
       spree_core (>= 0.30.0)
 
 GIT
+  remote: git://github.com/romul/spree_editor.git
+  revision: b47e0e7cf5e4afaa556796b199f295d9f968c619
+  specs:
+    spree_editor (0.50.0)
+      spree_core (>= 0.40.0)
+
+GIT
+  remote: git://github.com/spree/spree_static_content.git
+  revision: aedc8fae68061a85b2501c1cf1ba25c57bf98c8d
+  branch: v0.60.2
+  specs:
+    spree_static_content (0.60.2)
+      formtastic (~> 1.2.3)
+      spree_core (>= 0.60.0)
+      spree_editor (>= 0.50.0)
+
+GIT
   remote: https://github.com/spree/spree_i18n.git
   revision: 093f8cb98060715ba13f5372a166c923d3b75177
   specs:
@@ -76,6 +93,10 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     faker (0.9.5)
+      i18n (~> 0.4)
+    formtastic (1.2.4)
+      actionpack (>= 2.3.7)
+      activesupport (>= 2.3.7)
       i18n (~> 0.4)
     fssm (0.2.7)
     globalize3 (0.1.0)
@@ -206,7 +227,9 @@ DEPENDENCIES
   mysql2 (~> 0.2.11)
   rails
   spree (= 0.60.1)
+  spree_editor!
   spree_html_invoice!
   spree_i18n!
   spree_product_translations
   spree_simple_product_translations
+  spree_static_content!

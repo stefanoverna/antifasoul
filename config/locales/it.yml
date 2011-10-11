@@ -4,6 +4,85 @@
 it:
   it: "Italiano"
   en: "Inglese"
+
+  activerecord:
+    attributes:
+      page:
+        title: Titolo
+        slug: Slug
+        body: Contenuto
+        foreign_link: Link esterno (URL)
+        show_in_sidebar: Mostra in sidebar
+        show_in_header: Mostra nell'header
+        show_in_footer: Mostra nel footer
+        position: Posizione
+        visible: Visibile
+        meta_keywords: Meta Keywords
+        meta_description: Meta Description
+        layout: Layout
+    models:
+      page:
+        one: Pagina
+        many: Pagine
+
+  page: Pagina
+  pages: Pagine
+  static_content:
+    static_pages: Pagine statiche
+    static_pages_desc: Gestisci pagine statiche con un editor WYSIWYG.
+    new_page: Nuova pagina
+    editing_page: Modifica pagina
+    confirm_delete: "Sei sicuro?"
+    link: Link
+    meta_title: Meta Title
+
+
+  editor:
+    align_center: Allinea al centro
+    align_left: Allinea a sinistra
+    align_right: Allinea a destra
+    alignment: Allineamento
+    background_color: Colore di sfondo
+    bold: Grassetto
+    create_an_ordered_list: Crea lista numerata
+    create_an_unordered_list: Create lista puntata
+    edit_html_code: Modifica HTML
+    enter_file_name: Specifica il nome del file
+    font_name_and_size: Font e dimensione carattere
+    font_color: Colore font
+    font_style: Stile font
+    footer: Footer
+    header: Header
+    hide_more_fields: Nascondi campi aggiuntivi
+    html_link: HTML Link
+    indenting_and_lists: "Liste/Indentazione"
+    insert_item: Inserisci item
+    insert_image: Inserisci immagine
+    indent: Indenta
+    italic: Corsivo
+    justify: Giustificato
+    loading: Caricamento
+    normal: Normale
+    outdent: Deindenta
+    paragraph_style: Stile paragrafo
+    remove_formatting: Elimina formattazione
+    show_hide_hidden_elements: "Mostra/Nascondi elementi nascosti"
+    show_more_fields: Mostra campi aggiuntivi
+    sidebar: Sidebar
+    subscript: Subscript
+    superscript: Superscript
+    underline: Sottolineato
+    upload: Upload
+    upload_image: Upload Immagine
+    upload_file: Upload File
+
+  enable_rich_editor: "Enable Rich Editor"
+  rich_editor: "Rich Editor"
+  rich_editor_description: "Configure Rich Editor settings."
+  rich_editor_engine: "Rich Editor engine"
+  rich_editor_ids: "Rich Editor Identificators"
+  rich_editor_ids_description: "List textarea's ids splitted by spaces here"
+
   number:
     format:
       delimiter: ""

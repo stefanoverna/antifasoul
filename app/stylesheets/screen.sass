@@ -1,0 +1,139 @@
+@import "compass"
+
++global-reset
+
+@import "formalize"
+
+body
+  background: #181818
+  color: white
+  +text-shadow(black 0px -1px 0px)
+  font: 12px/1.35 Arial, Helvetica, sans-serif
+
+  #header
+    +background(linear-gradient(#070707, #181818))
+
+    .inner
+      width: 960px
+      margin: 0px auto
+      +clearfix
+
+      h1
+        float: left
+
+      .aside
+        float: right
+
+        #nav-bar
+          float: right
+          font-size: 10px
+          padding: 10px 0px
+
+          a
+            color: #FF1F1C
+            font-weight: bold
+            text-transform: uppercase
+            text-decoration: none
+
+            &:hover
+              color: white
+              text-decoration: underline
+
+          li
+            padding: 2px
+            float: left
+            padding-left: 10px
+            margin-left: 10px
+            border-left: 1px solid #333
+
+            &:first-child
+              border-left-width: 0px
+
+
+        .search-box
+          clear: right
+          margin-top: 15px
+          float: right
+          border: 1px solid #363636
+          border-bottom-width: 0px
+          +border-top-radius(10px)
+          background: black
+          padding: 15px
+
+        .cart-indicator
+          clear: right
+          float: right
+
+          a
+            color: white
+            line-height: 35px
+            height: 30px
+            display: block
+            padding-left: 40px
+            background: image-url("custom/cart.png") no-repeat left center
+            font-weight: bold
+            text-decoration: none
+
+            &:hover
+              text-decoration: underline
+
+  #wrapper
+    width: 960px
+    margin: 0px auto
+
+    ul#taxonomies
+      margin-bottom: 20px
+      font-size: 12px
+      text-transform: uppercase
+      +display-box
+      +box-align(stretch)
+      +box-orient(horizontal)
+
+      & > li
+        +box-flex(1)
+        position: relative
+
+        a
+          padding: 27px 0
+          border: 1px solid #363636
+          border-right-width: 0px
+          display: block
+          text-align: center
+          +background(linear-gradient(#171717, #040404))
+          text-decoration: none
+          color: white
+          font-weight: bold
+
+          &:hover
+            background: black
+            color: #FF1F1C
+
+        &:first-child > a
+          +border-left-radius(10px)
+
+        &:last-child > a
+          +border-bottom-right-radius(10px)
+          border-right-width: 1px
+
+        ul
+          display: none
+
+        &:hover
+
+          ul
+            display: block
+            position: absolute
+            top: 60px
+            left: 10px
+            right: 10px
+
+            li a
+              padding: 15px 0px
+              border-right-width: 1px
+              border-bottom-width: 0px
+              +border-radius(0px)
+
+            li:last-child a
+              +border-bottom-radius(10px)
+
+
