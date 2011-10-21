@@ -2,6 +2,7 @@ if Spree::Config.instance
   Spree::Config.set(:default_locale => 'it')
   Spree::Config.set(:allow_ssl_in_production => false)
   Spree::Config.set(:logo => '/images/custom/logo.png')
+  Spree::Config.set(:html_invoice_logo_path => "/images/custom/logo.png")
 end
 
 def euro_price_filter

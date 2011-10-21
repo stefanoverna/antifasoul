@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/dancinglightning/spree-html-invoice.git
-  revision: d4f1da5e3d4770affd688a91fcf4aeb81c2df67a
+  revision: a3062b60dd0eb135f2793f7e4fddf8558ad9dfcc
+  branch: 0.60
   specs:
     spree_html_invoice (0.0.1)
       spree_core (>= 0.30.0)
