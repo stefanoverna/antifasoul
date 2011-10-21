@@ -169,6 +169,8 @@ GEM
       spree_dash (= 0.60.1)
       spree_promo (= 0.60.1)
       spree_sample (= 0.60.1)
+    spree_additional_calculators (0.1.1)
+      spree_core (>= 0.50.2)
     spree_api (0.60.1)
       spree_auth (= 0.60.1)
       spree_core (= 0.60.1)
@@ -227,6 +229,7 @@ DEPENDENCIES
   mysql2 (~> 0.2.11)
   rails
   spree (= 0.60.1)
+  spree_additional_calculators
   spree_editor!
   spree_html_invoice!
   spree_i18n!

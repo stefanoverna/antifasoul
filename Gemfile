@@ -13,6 +13,7 @@ gem "spree_editor", :git => "git://github.com/romul/spree_editor.git"
 gem 'spree_product_translations'
 gem 'spree_simple_product_translations'
 gem 'deface'
+gem "spree_additional_calculators"
 
 group :development do
   gem 'active_reload'

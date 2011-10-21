@@ -36,7 +36,14 @@ it:
     link: Link
     meta_title: Meta Title
 
+  rate_type_1: Peso
+  rate_type_2: Quantità
+  from: Da
+  to: A
+  add_new: Aggiungi nuovo
 
+  calculator_names:
+    weight_and_quantity: Peso e quantità
   editor:
     align_center: Allinea al centro
     align_left: Allinea a sinistra
