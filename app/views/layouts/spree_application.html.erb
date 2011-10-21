@@ -37,22 +37,24 @@ end
 
   <div id="wrapper" class="container">
 
-    <ul id="taxonomies">
-      <% Taxonomy.find_by_name("Categoria").root.children.each do |taxon| %>
-        <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>>
-          <%= link_to taxon.name, seo_url(taxon) %>
-          <% if taxon.children.any? %>
-            <ul>
-              <% taxon.children.each do |subtaxon| %>
-                <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(subtaxon) %>>
-                  <%= link_to subtaxon.name, seo_url(subtaxon) %>
-                </li>
-              <% end %>
-            </ul>
-          <% end %>
-        </li>
-      <% end %>
-    </ul>
+    <% if Taxonomy.find_by_name("Categoria") %>
+      <ul id="taxonomies">
+        <% Taxonomy.find_by_name("Categoria").root.children.each do |taxon| %>
+          <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>>
+            <%= link_to taxon.name, seo_url(taxon) %>
+            <% if taxon.children.any? %>
+              <ul>
+                <% taxon.children.each do |subtaxon| %>
+                  <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(subtaxon) %>>
+                    <%= link_to subtaxon.name, seo_url(subtaxon) %>
+                  </li>
+                <% end %>
+              </ul>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
 
     <% if content_for?(:sidebar) %>
     <div id="sidebar">
