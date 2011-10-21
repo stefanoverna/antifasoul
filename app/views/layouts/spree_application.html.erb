@@ -38,14 +38,14 @@ end
   <div id="wrapper" class="container">
 
     <ul id="taxonomies">
-      <% get_taxonomies.each do |taxonomy| %>
-        <li<%== ' class="current"' if @taxon && @taxon == taxonomy.root %>>
-          <%= link_to taxonomy.name, seo_url(taxonomy.root) %>
-          <% if taxonomy.root.children.any? %>
+      <% Taxonomy.find_by_name("Categoria").root.children.each do |taxon| %>
+        <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>>
+          <%= link_to taxon.name, seo_url(taxon) %>
+          <% if taxon.children.any? %>
             <ul>
-              <% taxonomy.root.children.each do |taxon| %>
-                <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>>
-                  <%= link_to taxon.name, seo_url(taxon) %>
+              <% taxon.children.each do |subtaxon| %>
+                <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(subtaxon) %>>
+                  <%= link_to subtaxon.name, seo_url(subtaxon) %>
                 </li>
               <% end %>
             </ul>
@@ -72,8 +72,8 @@ end
       <% end %>
       <%= yield %>
     </div>
-    <%= render :partial => 'shared/footer'%>
   </div>
+  <%= render :partial => 'shared/footer'%>
 
 </body>
 </html>

@@ -5,13 +5,12 @@
 @import "formalize"
 
 body
-  background: #181818
-  color: white
+  background: black image-url("custom/background.png") no-repeat top center
   +text-shadow(black 0px -1px 0px)
   font: 12px/1.35 Arial, Helvetica, sans-serif
-
+  color: white
+  
   #header
-    +background(linear-gradient(#070707, #181818))
 
     .inner
       width: 960px
@@ -19,6 +18,7 @@ body
       +clearfix
 
       h1
+        margin-top: 10px
         float: left
 
       .aside
@@ -80,11 +80,11 @@ body
   #wrapper
     width: 960px
     margin: 0px auto
+    +clearfix
 
     ul#taxonomies
-      margin-bottom: 20px
-      font-size: 12px
-      text-transform: uppercase
+      margin-bottom: 25px
+      font-size: 20px
       +display-box
       +box-align(stretch)
       +box-orient(horizontal)
@@ -94,7 +94,7 @@ body
         position: relative
 
         a
-          padding: 27px 0
+          padding: 12px 0
           border: 1px solid #363636
           border-right-width: 0px
           display: block
@@ -102,7 +102,8 @@ body
           +background(linear-gradient(#171717, #040404))
           text-decoration: none
           color: white
-          font-weight: bold
+          font-weight: normal
+          font-family: Lobster
 
           &:hover
             background: black
@@ -123,17 +124,202 @@ body
           ul
             display: block
             position: absolute
-            top: 60px
-            left: 10px
-            right: 10px
+            top: 50px
+            left: -15px
+            right: -15px
+            z-index: 20
+            +box-shadow(black 0 3px 10px)
+            +border-radius(10px)
 
-            li a
-              padding: 15px 0px
-              border-right-width: 1px
-              border-bottom-width: 0px
-              +border-radius(0px)
+            li
+              +background(linear-gradient(#171717, #040404))
+
+              a
+                display: block
+                padding: 10px 0px
+                border-right-width: 1px
+                border-bottom-width: 0px
+                font-size: 17px
+                background: image-url("custom/star.png") no-repeat 10px 50%
+                text-align: left
+                padding-left: 45px
+                +border-radius(0px)
+
+              &:hover
+                background: black
+
+            li:first-child a
+              +border-top-radius(10px)
 
             li:last-child a
               +border-bottom-radius(10px)
 
+body.two-col
+
+  #wrapper
+
+    #sidebar
+      float: left
+      width: 200px
+      margin-right: 20px
+
+      .sidebar-taxonomy
+        +background(linear-gradient(rgba(#171717, 0.8), #040404))
+        padding: 10px
+        +border-radius(10px)
+        margin-bottom: 20px
+        +box-shadow(black 0 5px 10px)
+        border: 1px solid #363636
+
+        .footer
+          margin-top: 10px
+
+        a
+          color: white
+          text-decoration: none
+
+        h3
+          font-size: 17px
+          color: white
+          margin-bottom: 10px
+          font-family: Lobster
+
+        ul
+          a
+            display: block
+            color: #ddd
+            padding: 8px 0
+            border-bottom: 1px solid #1C1C1C
+            font-weight: bold
+            background: image-url("custom/star.png") no-repeat 0px 50%
+            padding-left: 30px
+
+            &:hover
+              background: rgba(black, 0.4) image-url("custom/star.png") no-repeat 0px 50%
+              +border-radius(4px)
+              color: #FF1F1C
+
+          li:last-child a
+            border-bottom-width: 0
+
+    #content
+      float: left
+      width: 960px - 200px - 20px
+
+      .clear
+
+      h1
+        font-size: 40px
+        font-family: Lobster
+        margin-bottom: 25px
+        text-align: center
+
+      .breadcrumbs
+        font-family: Lobster
+        font-size: 16px
+        margin-bottom: 10px
+        color: #ccc
+        text-align: center
+
+        .clear
+          display: none
+
+        li
+          display: inline
+
+        a
+          color: #ccc
+          text-decoration: none
+          padding: 0px 5px
+
+          &:hover
+            color: #FF1F1C
+
+      .product-listing
+        +clearfix
+
+        li
+          float: left
+          width: 33.333%
+          margin-bottom: 15px
+
+          .inner
+            +background(linear-gradient(rgba(#171717, 0.8), #040404))
+            padding: 10px
+            text-align: center
+            border: 1px solid #1C1C1C
+            margin-right: 15px
+            +border-radius(10px)
+            +box-shadow(black 0 5px 10px)
+
+            &:hover
+              +background(linear-gradient(rgba(#FF5C62, 0.2), rgba(#C14141, 0.5)))
+
+            img
+              +border-radius(6px)
+              max-width: 100%
+              display: block
+
+          .footer
+            padding-top: 10px
+            font-family: Lobster
+            font-size: 17px
+            color: white
+            position: relative
+
+            a
+              color: white
+              text-decoration: none
+
+              span
+                position: absolute
+                right: 10px
+                top: -35px
+                height: 25px
+                line-height: 25px
+                background: rgba(black, 0.6)
+                padding: 0px 20px
+                +border-radius(10px)
+
+  #footer
+    padding: 50px 0px
+    +background(linear-gradient(rgba(#5B0000, 0), #5B0000))
+
+    .inner
+      width: 960px
+      margin: 0px auto
+
+    ul
+      margin-left: 150px
+      background: rgba(black, 0.9)
+      position: relative
+      padding-right: 140px + 20px
+      +border-radius(4px)
+      +box-shadow(black 0 5px 10px)
+      +display-box
+
+      li
+        +box-flex(1)
+        list-style-type: none
+        text-align: center
+        font-family: Lobster
+        font-size: 20px
+
+        a
+          color: #FF1F1C
+          text-decoration: none
+          padding: 10px
+          display: block
+
+          &:hover
+            color: white
+            
+        &.logo
+          position: absolute
+          top: (50px - 130px) / 2
+          right: 0px
+          text-indent: -1000em
+          width: 140px
+          height: 130px
+          background: image-url("custom/footer_star.png") no-repeat center right
 

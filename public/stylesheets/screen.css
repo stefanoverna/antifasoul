@@ -439,29 +439,21 @@ optgroup {
 
 /* line 7, ../../app/stylesheets/screen.sass */
 body {
-  background: #181818;
-  color: white;
+  background: black url('/images/custom/background.png?1319146344') no-repeat top center;
   text-shadow: black 0px -1px 0px;
   font: 12px/1.35 Arial, Helvetica, sans-serif;
+  color: white;
 }
-/* line 13, ../../app/stylesheets/screen.sass */
-body #header {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #070707), color-stop(100%, #181818));
-  background: -webkit-linear-gradient(#070707, #181818);
-  background: -moz-linear-gradient(#070707, #181818);
-  background: -o-linear-gradient(#070707, #181818);
-  background: -ms-linear-gradient(#070707, #181818);
-  background: linear-gradient(#070707, #181818);
-}
-/* line 16, ../../app/stylesheets/screen.sass */
+/* line 15, ../../app/stylesheets/screen.sass */
 body #header .inner {
   width: 960px;
   margin: 0px auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 21, ../../app/stylesheets/screen.sass */
+/* line 20, ../../app/stylesheets/screen.sass */
 body #header .inner h1 {
+  margin-top: 10px;
   float: left;
 }
 /* line 24, ../../app/stylesheets/screen.sass */
@@ -544,12 +536,13 @@ body #header .inner .aside .cart-indicator a:hover {
 body #wrapper {
   width: 960px;
   margin: 0px auto;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 84, ../../app/stylesheets/screen.sass */
+/* line 85, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies {
-  margin-bottom: 20px;
-  font-size: 12px;
-  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 20px;
   display: -moz-box;
   display: -webkit-box;
   display: -ms-box;
@@ -573,7 +566,7 @@ body #wrapper ul#taxonomies > li {
 }
 /* line 96, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li a {
-  padding: 27px 0;
+  padding: 12px 0;
   border: 1px solid #363636;
   border-right-width: 0px;
   display: block;
@@ -586,14 +579,15 @@ body #wrapper ul#taxonomies > li a {
   background: linear-gradient(#171717, #040404);
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: Lobster;
 }
-/* line 107, ../../app/stylesheets/screen.sass */
+/* line 108, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li a:hover {
   background: black;
   color: #ff1f1c;
 }
-/* line 111, ../../app/stylesheets/screen.sass */
+/* line 112, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li:first-child > a {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -608,7 +602,7 @@ body #wrapper ul#taxonomies > li:first-child > a {
   -khtml-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 114, ../../app/stylesheets/screen.sass */
+/* line 115, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li:last-child > a {
   -moz-border-radius-bottomright: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -618,23 +612,48 @@ body #wrapper ul#taxonomies > li:last-child > a {
   border-bottom-right-radius: 10px;
   border-right-width: 1px;
 }
-/* line 118, ../../app/stylesheets/screen.sass */
+/* line 119, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li ul {
   display: none;
 }
-/* line 123, ../../app/stylesheets/screen.sass */
+/* line 124, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li:hover ul {
   display: block;
   position: absolute;
-  top: 60px;
-  left: 10px;
-  right: 10px;
+  top: 50px;
+  left: -15px;
+  right: -15px;
+  z-index: 20;
+  -moz-box-shadow: black 0 3px 10px;
+  -webkit-box-shadow: black 0 3px 10px;
+  -o-box-shadow: black 0 3px 10px;
+  box-shadow: black 0 3px 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
 }
-/* line 130, ../../app/stylesheets/screen.sass */
+/* line 134, ../../app/stylesheets/screen.sass */
+body #wrapper ul#taxonomies > li:hover ul li {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #171717), color-stop(100%, #040404));
+  background: -webkit-linear-gradient(#171717, #040404);
+  background: -moz-linear-gradient(#171717, #040404);
+  background: -o-linear-gradient(#171717, #040404);
+  background: -ms-linear-gradient(#171717, #040404);
+  background: linear-gradient(#171717, #040404);
+}
+/* line 137, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li:hover ul li a {
-  padding: 15px 0px;
+  display: block;
+  padding: 10px 0px;
   border-right-width: 1px;
   border-bottom-width: 0px;
+  font-size: 17px;
+  background: url('/images/custom/star.png?1319148196') no-repeat 10px 50%;
+  text-align: left;
+  padding-left: 45px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   -o-border-radius: 0px;
@@ -642,7 +661,26 @@ body #wrapper ul#taxonomies > li:hover ul li a {
   -khtml-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 136, ../../app/stylesheets/screen.sass */
+/* line 148, ../../app/stylesheets/screen.sass */
+body #wrapper ul#taxonomies > li:hover ul li:hover {
+  background: black;
+}
+/* line 151, ../../app/stylesheets/screen.sass */
+body #wrapper ul#taxonomies > li:hover ul li:first-child a {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -khtml-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 154, ../../app/stylesheets/screen.sass */
 body #wrapper ul#taxonomies > li:hover ul li:last-child a {
   -moz-border-radius-bottomleft: 10px;
   -webkit-border-bottom-left-radius: 10px;
@@ -656,4 +694,263 @@ body #wrapper ul#taxonomies > li:hover ul li:last-child a {
   -ms-border-bottom-right-radius: 10px;
   -khtml-border-bottom-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+/* line 161, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+/* line 166, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar .sidebar-taxonomy {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
+  background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: -moz-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: -o-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: -ms-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  -moz-box-shadow: black 0 5px 10px;
+  -webkit-box-shadow: black 0 5px 10px;
+  -o-box-shadow: black 0 5px 10px;
+  box-shadow: black 0 5px 10px;
+  border: 1px solid #363636;
+}
+/* line 174, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar .sidebar-taxonomy .footer {
+  margin-top: 10px;
+}
+/* line 177, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar .sidebar-taxonomy a {
+  color: white;
+  text-decoration: none;
+}
+/* line 181, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar .sidebar-taxonomy h3 {
+  font-size: 17px;
+  color: white;
+  margin-bottom: 10px;
+  font-family: Lobster;
+}
+/* line 188, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar .sidebar-taxonomy ul a {
+  display: block;
+  color: #dddddd;
+  padding: 8px 0;
+  border-bottom: 1px solid #1c1c1c;
+  font-weight: bold;
+  background: url('/images/custom/star.png?1319148196') no-repeat 0px 50%;
+  padding-left: 30px;
+}
+/* line 197, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar .sidebar-taxonomy ul a:hover {
+  background: rgba(0, 0, 0, 0.4) url('/images/custom/star.png?1319148196') no-repeat 0px 50%;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  color: #ff1f1c;
+}
+/* line 202, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #sidebar .sidebar-taxonomy ul li:last-child a {
+  border-bottom-width: 0;
+}
+/* line 205, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content {
+  float: left;
+  width: 740px;
+}
+/* line 211, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content h1 {
+  font-size: 40px;
+  font-family: Lobster;
+  margin-bottom: 25px;
+  text-align: center;
+}
+/* line 217, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .breadcrumbs {
+  font-family: Lobster;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #cccccc;
+  text-align: center;
+}
+/* line 224, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .breadcrumbs .clear {
+  display: none;
+}
+/* line 227, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .breadcrumbs li {
+  display: inline;
+}
+/* line 230, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .breadcrumbs a {
+  color: #cccccc;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+/* line 235, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .breadcrumbs a:hover {
+  color: #ff1f1c;
+}
+/* line 238, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 241, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing li {
+  float: left;
+  width: 33.333%;
+  margin-bottom: 15px;
+}
+/* line 246, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing li .inner {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
+  background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: -moz-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: -o-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: -ms-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  background: linear-gradient(rgba(23, 23, 23, 0.8), #040404);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #1c1c1c;
+  margin-right: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: black 0 5px 10px;
+  -webkit-box-shadow: black 0 5px 10px;
+  -o-box-shadow: black 0 5px 10px;
+  box-shadow: black 0 5px 10px;
+}
+/* line 255, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing li .inner:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 92, 98, 0.2)), color-stop(100%, rgba(193, 65, 65, 0.5)));
+  background: -webkit-linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
+  background: -moz-linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
+  background: -o-linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
+  background: -ms-linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
+  background: linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
+}
+/* line 258, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing li .inner img {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  max-width: 100%;
+  display: block;
+}
+/* line 263, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing li .footer {
+  padding-top: 10px;
+  font-family: Lobster;
+  font-size: 17px;
+  color: white;
+  position: relative;
+}
+/* line 270, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing li .footer a {
+  color: white;
+  text-decoration: none;
+}
+/* line 274, ../../app/stylesheets/screen.sass */
+body.two-col #wrapper #content .product-listing li .footer a span {
+  position: absolute;
+  right: 10px;
+  top: -35px;
+  height: 25px;
+  line-height: 25px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0px 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 284, ../../app/stylesheets/screen.sass */
+body.two-col #footer {
+  padding: 50px 0px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(91, 0, 0, 0)), color-stop(100%, #5b0000));
+  background: -webkit-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
+  background: -moz-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
+  background: -o-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
+  background: -ms-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
+  background: linear-gradient(rgba(91, 0, 0, 0), #5b0000);
+}
+/* line 288, ../../app/stylesheets/screen.sass */
+body.two-col #footer .inner {
+  width: 960px;
+  margin: 0px auto;
+}
+/* line 292, ../../app/stylesheets/screen.sass */
+body.two-col #footer ul {
+  margin-left: 150px;
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  padding-right: 160px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: black 0 5px 10px;
+  -webkit-box-shadow: black 0 5px 10px;
+  -o-box-shadow: black 0 5px 10px;
+  box-shadow: black 0 5px 10px;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-box;
+  display: box;
+}
+/* line 301, ../../app/stylesheets/screen.sass */
+body.two-col #footer ul li {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  list-style-type: none;
+  text-align: center;
+  font-family: Lobster;
+  font-size: 20px;
+}
+/* line 308, ../../app/stylesheets/screen.sass */
+body.two-col #footer ul li a {
+  color: #ff1f1c;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+/* line 314, ../../app/stylesheets/screen.sass */
+body.two-col #footer ul li a:hover {
+  color: white;
+}
+/* line 317, ../../app/stylesheets/screen.sass */
+body.two-col #footer ul li.logo {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  text-indent: -1000em;
+  width: 140px;
+  height: 130px;
+  background: url('/images/custom/footer_star.png?1319158002') no-repeat center right;
 }

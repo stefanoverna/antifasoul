@@ -1,3 +1,5 @@
 log/
+public/assets/*
+.sass-cache
 tmp/
 .DS_Store
