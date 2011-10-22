@@ -1,4 +1,5 @@
 @import "compass"
+@import "common"
 
 +global-reset
 
@@ -9,198 +10,24 @@ body
   +text-shadow(black 0px -1px 0px)
   font: 12px/1.35 Arial, Helvetica, sans-serif
   color: white
-  
-  #header
 
-    .inner
-      width: 960px
-      margin: 0px auto
-      +clearfix
-
-      h1
-        margin-top: 10px
-        float: left
-
-      .aside
-        float: right
-
-        #nav-bar
-          float: right
-          font-size: 10px
-          padding: 10px 0px
-
-          a
-            color: #FF1F1C
-            font-weight: bold
-            text-transform: uppercase
-            text-decoration: none
-
-            &:hover
-              color: white
-              text-decoration: underline
-
-          li
-            padding: 2px
-            float: left
-            padding-left: 10px
-            margin-left: 10px
-            border-left: 1px solid #333
-
-            &:first-child
-              border-left-width: 0px
-
-
-        .search-box
-          clear: right
-          margin-top: 15px
-          float: right
-          border: 1px solid #363636
-          border-bottom-width: 0px
-          +border-top-radius(10px)
-          background: black
-          padding: 15px
-
-        .cart-indicator
-          clear: right
-          float: right
-
-          a
-            color: white
-            line-height: 35px
-            height: 30px
-            display: block
-            padding-left: 40px
-            background: image-url("custom/cart.png") no-repeat left center
-            font-weight: bold
-            text-decoration: none
-
-            &:hover
-              text-decoration: underline
+  @import "header"
+  @import "footer"
 
   #wrapper
     width: 960px
     margin: 0px auto
-    +clearfix
+    +fix
 
-    ul#taxonomies
-      margin-bottom: 25px
-      font-size: 20px
-      +display-box
-      +box-align(stretch)
-      +box-orient(horizontal)
-
-      & > li
-        +box-flex(1)
-        position: relative
-
-        a
-          padding: 12px 0
-          border: 1px solid #363636
-          border-right-width: 0px
-          display: block
-          text-align: center
-          +background(linear-gradient(#171717, #040404))
-          text-decoration: none
-          color: white
-          font-weight: normal
-          font-family: Lobster
-
-          &:hover
-            background: black
-            color: #FF1F1C
-
-        &:first-child > a
-          +border-left-radius(10px)
-
-        &:last-child > a
-          +border-bottom-right-radius(10px)
-          border-right-width: 1px
-
-        ul
-          display: none
-
-        &:hover
-
-          ul
-            display: block
-            position: absolute
-            top: 50px
-            left: -15px
-            right: -15px
-            z-index: 20
-            +box-shadow(black 0 3px 10px)
-            +border-radius(10px)
-
-            li
-              +background(linear-gradient(#171717, #040404))
-
-              a
-                display: block
-                padding: 10px 0px
-                border-right-width: 1px
-                border-bottom-width: 0px
-                font-size: 17px
-                background: image-url("custom/star.png") no-repeat 10px 50%
-                text-align: left
-                padding-left: 45px
-                +border-radius(0px)
-
-              &:hover
-                background: black
-
-            li:first-child a
-              +border-top-radius(10px)
-
-            li:last-child a
-              +border-bottom-radius(10px)
+    @import "main_menu"
 
 body.two-col
 
   #wrapper
 
-    #sidebar
-      float: left
-      width: 200px
-      margin-right: 20px
 
-      .sidebar-taxonomy
-        +background(linear-gradient(rgba(#171717, 0.8), #040404))
-        padding: 10px
-        +border-radius(10px)
-        margin-bottom: 20px
-        +box-shadow(black 0 5px 10px)
-        border: 1px solid #363636
+    @import "sidebar"
 
-        .footer
-          margin-top: 10px
-
-        a
-          color: white
-          text-decoration: none
-
-        h3
-          font-size: 17px
-          color: white
-          margin-bottom: 10px
-          font-family: Lobster
-
-        ul
-          a
-            display: block
-            color: #ddd
-            padding: 8px 0
-            border-bottom: 1px solid #1C1C1C
-            font-weight: bold
-            background: image-url("custom/star.png") no-repeat 0px 50%
-            padding-left: 30px
-
-            &:hover
-              background: rgba(black, 0.4) image-url("custom/star.png") no-repeat 0px 50%
-              +border-radius(4px)
-              color: #FF1F1C
-
-          li:last-child a
-            border-bottom-width: 0
 
     #content
       float: left
@@ -235,91 +62,6 @@ body.two-col
           &:hover
             color: #FF1F1C
 
-      .product-listing
-        +clearfix
+      @import "product_listing"
 
-        li
-          float: left
-          width: 33.333%
-          margin-bottom: 15px
-
-          .inner
-            +background(linear-gradient(rgba(#171717, 0.8), #040404))
-            padding: 10px
-            text-align: center
-            border: 1px solid #1C1C1C
-            margin-right: 15px
-            +border-radius(10px)
-            +box-shadow(black 0 5px 10px)
-
-            &:hover
-              +background(linear-gradient(rgba(#FF5C62, 0.2), rgba(#C14141, 0.5)))
-
-            img
-              +border-radius(6px)
-              max-width: 100%
-              display: block
-
-          .footer
-            padding-top: 10px
-            font-family: Lobster
-            font-size: 17px
-            color: white
-            position: relative
-
-            a
-              color: white
-              text-decoration: none
-
-              span
-                position: absolute
-                right: 10px
-                top: -35px
-                height: 25px
-                line-height: 25px
-                background: rgba(black, 0.6)
-                padding: 0px 20px
-                +border-radius(10px)
-
-  #footer
-    padding: 50px 0px
-    +background(linear-gradient(rgba(#5B0000, 0), #5B0000))
-
-    .inner
-      width: 960px
-      margin: 0px auto
-
-    ul
-      margin-left: 150px
-      background: rgba(black, 0.9)
-      position: relative
-      padding-right: 140px + 20px
-      +border-radius(4px)
-      +box-shadow(black 0 5px 10px)
-      +display-box
-
-      li
-        +box-flex(1)
-        list-style-type: none
-        text-align: center
-        font-family: Lobster
-        font-size: 20px
-
-        a
-          color: #FF1F1C
-          text-decoration: none
-          padding: 10px
-          display: block
-
-          &:hover
-            color: white
-            
-        &.logo
-          position: absolute
-          top: (50px - 130px) / 2
-          right: 0px
-          text-indent: -1000em
-          width: 140px
-          height: 130px
-          background: image-url("custom/footer_star.png") no-repeat center right
 

@@ -1,0 +1,42 @@
+#footer
+  padding: 50px 0px
+  +background(linear-gradient(rgba(#5B0000, 0), #5B0000))
+
+  .inner
+    width: 960px
+    margin: 0px auto
+
+  ul
+    background: rgba(black, 0.9)
+    position: relative
+    padding-right: 140px + 20px
+    +border-radius(4px)
+    +box-shadow(black 0 5px 10px)
+    +fix
+
+    li
+      float: left
+      list-style-type: none
+      text-align: center
+      font-family: Lobster
+      font-size: 20px
+
+      a
+        color: #FF1F1C
+        text-decoration: none
+        padding: 10px
+        display: block
+
+        &:hover
+          color: white
+
+      &.logo
+        position: absolute
+        top: (50px - 130px) / 2
+        right: 0px
+        text-indent: -1000em
+        width: 140px
+        height: 130px
+        z-index: 20
+        background: image-url("custom/footer_star.png") no-repeat center right
+

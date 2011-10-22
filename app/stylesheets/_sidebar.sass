@@ -1,0 +1,44 @@
+#sidebar
+  float: left
+  width: 200px
+  margin-right: 20px
+
+  .sidebar-taxonomy
+    +background(linear-gradient(rgba(#171717, 0.8), #040404))
+    padding: 10px
+    +border-radius(10px)
+    margin-bottom: 20px
+    +box-shadow(black 0 5px 10px)
+    border: 1px solid #363636
+
+    .footer
+      margin-top: 10px
+
+    a
+      color: white
+      text-decoration: none
+
+    h3
+      font-size: 17px
+      color: white
+      margin-bottom: 10px
+      font-family: Lobster
+
+    ul
+      a
+        display: block
+        color: #ddd
+        padding: 8px 0
+        border-bottom: 1px solid #1C1C1C
+        font-weight: bold
+        background: image-url("custom/star.png") no-repeat 0px 50%
+        padding-left: 30px
+
+        &:hover
+          background: rgba(black, 0.4) image-url("custom/star.png") no-repeat 0px 50%
+          +border-radius(4px)
+          color: #FF1F1C
+
+      li:last-child a
+        border-bottom-width: 0
+

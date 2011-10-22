@@ -1,12 +1,12 @@
 <div id="footer">
   <div class="inner">
-  <ul>
-    <% for page in Page.footer_links do %>
-      <li><%= link_to page.title, page.link %></li>
-    <% end %>
-    <li class="facebook"><%= link_to "Facebook", "#" %></li>
-    <li class="logo"><%= link_to "Antifa Soul", "#" %></li>
-  </ul>
-</div>
+    <ul class="split-in-<%= Page.footer_links.count + 1 %>">
+      <% for page in Page.footer_links do %>
+        <li><%= link_to page.title, page.link %></li>
+      <% end %>
+      <li class="facebook"><%= link_to "Facebook", "#" %></li>
+      <li class="logo"><%= link_to "Antifa Soul", "#" %></li>
+    </ul>
+  </div>
 </div>
 <%= render 'shared/google_analytics' %>

@@ -1,0 +1,45 @@
+.product-listing
+  +fix
+
+  li
+    float: left
+    width: 33.333%
+    margin-bottom: 15px
+
+    .inner
+      +background(linear-gradient(rgba(#171717, 0.8), #040404))
+      padding: 10px
+      text-align: center
+      border: 1px solid #1C1C1C
+      margin-right: 15px
+      +border-radius(10px)
+      +box-shadow(black 0 5px 10px)
+
+      &:hover
+        +background(linear-gradient(rgba(#FF5C62, 0.2), rgba(#C14141, 0.5)))
+
+      img
+        +border-radius(6px)
+        max-width: 100%
+        display: block
+
+    .footer
+      padding-top: 10px
+      font-family: Lobster
+      font-size: 17px
+      color: white
+      position: relative
+
+      a
+        color: white
+        text-decoration: none
+
+        span
+          position: absolute
+          right: 10px
+          top: -35px
+          height: 25px
+          line-height: 25px
+          background: rgba(black, 0.6)
+          padding: 0px 20px
+          +border-radius(10px)

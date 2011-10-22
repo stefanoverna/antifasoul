@@ -38,7 +38,7 @@ end
   <div id="wrapper" class="container">
 
     <% if Taxonomy.find_by_name("Categoria") %>
-      <ul id="taxonomies">
+      <ul id="taxonomies" class="split-in-<%= Taxonomy.find_by_name("Categoria").root.children.count %>">
         <% Taxonomy.find_by_name("Categoria").root.children.each do |taxon| %>
           <li<%== ' class="current"' if @taxon and ([@taxon] + @taxon.ancestors).include?(taxon) %>>
             <%= link_to taxon.name, seo_url(taxon) %>
