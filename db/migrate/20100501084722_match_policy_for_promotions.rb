@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class MatchPolicyForPromotions < ActiveRecord::Migration
   def self.up
     add_column "promotions", "match_policy", :string, :default => 'all'

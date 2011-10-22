@@ -1,0 +1,239 @@
+.product-details
+  +fix
+
+  #product-images
+    float: left
+    width: 30%
+    margin-right: 5%
+
+    img
+      +border-radius(10px)
+      +box-shadow(black 0 5px 10px)
+
+    #main-image
+      margin-bottom: 15px
+
+    #thumbnails
+
+      ul
+        margin-bottom: 15px
+        +fix
+
+        li
+          width: 33%
+          float: left
+
+          a
+            display: block
+            margin: 4px
+            overflow: hidden
+            width: 79px
+            height: 79px
+            position: relative
+
+            img
+              position: absolute
+              top: 0
+              left: 0
+              width: 100%
+              display: block
+
+      h4
+        font-family: Lobster
+        font-size: 20px
+        margin-bottom: 10px
+        color: #ccc
+
+        span
+          color: white
+
+  #product-description
+    float: left
+    width: 35%
+    padding-right: 5%
+
+    #product-properties
+      margin-top: 15px
+      border-top: 1px solid rgba(white, 0.1)
+      +fix
+
+      dt
+        font-weight: bold
+        width: 50%
+        float: left
+        padding: 5px 0px
+        border-bottom: 1px solid rgba(white, 0.1)
+
+      dd
+        width: 50%
+        float: left
+        padding: 5px 0px
+        border-bottom: 1px solid rgba(white, 0.1)
+
+
+  #cart-form
+    float: left
+    width: 25%
+
+    button
+      background-color: #ee432e
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ee432e 0%), to(#c63929 50%))
+      /* Saf4+, Chrome */
+      background-image: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+      background-image: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+      background-image: -ms-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+      background-image: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+      background-image: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%)
+      border: 1px solid #951100
+      -webkit-border-radius: 5px
+      -moz-border-radius: 5px
+      -ms-border-radius: 5px
+      -o-border-radius: 5px
+      border-radius: 5px
+      -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #111
+      -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #111
+      -ms-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #111
+      -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #111
+      box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #111
+      color: #fff
+      line-height: 1
+      padding: 12px 0 14px 0
+      text-align: center
+      text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8)
+      width: 100%
+      display: block
+      font-family: Lobster
+      font-size: 18px
+      font-weight: normal
+
+      &:hover
+        background-color: #f37873
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f37873 0%), to(#db504d 50%))
+        /* Saf4+, Chrome */
+        background-image: -webkit-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+        background-image: -moz-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+        background-image: -ms-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+        background-image: -o-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+        background-image: linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%)
+        cursor: pointer
+      &:active
+        background-color: #d43c28
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#d43c28 0%), to(#ad3224 50%))
+        /* Saf4+, Chrome */
+        background-image: -webkit-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+        background-image: -moz-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+        background-image: -ms-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+        background-image: -o-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+        background-image: linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%)
+        -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
+        -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
+        -ms-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
+        -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
+        box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4)
+
+      img
+        display: none
+
+    h2
+      font-family: Lobster
+      font-size: 18px
+      color: #ddd
+      margin-bottom: 10px
+
+      .variant-options
+        padding-left: 15px
+
+        h3
+          font-family: Lobster
+          font-size: 18px
+          margin-bottom: 5px
+
+
+    p.prices
+      font-family: Lobster
+      font-size: 18px
+      line-height: 25px
+      position: relative
+      margin-bottom: 20px
+      padding-bottom: 4px
+      border-bottom: 1px solid rgba(white, 0.1)
+
+      span.price
+        position: absolute
+        right: 0
+        top: 0
+        font-size: 25px
+
+        &.unselected
+          color: #444
+
+    #product-variants
+
+      .variant-option-type
+        font-family: Lobster
+        font-size: 15px
+        margin-bottom: 5px
+
+      ul.variant-option-values
+        margin-bottom: 15px
+
+        li
+          display: block
+          float: left
+          font-size: 14px
+          line-height: 14px
+
+          &.clear
+            border: 0
+            float: none
+            clear: both
+
+          &.clear-option a.clear-button
+            display: none
+            font-weight: bold
+            font-size: 8px
+            background-color: #222
+            border-bottom: 1px solid black
+            border-top: 1px solid #555
+            color: #ADADAD
+
+            &:hover
+              background-color: #434343
+              color: #fff
+
+          a
+            display: block
+            background-color: #222
+            border-bottom: 1px solid black
+            border-top: 1px solid #555
+            padding: 4px 9px
+            margin: 3px 3px 0 0
+            text-decoration: none
+            cursor: pointer
+            color: white
+            +border-radius(5px)
+
+          .option-value
+
+            &.selected, &.in-stock:hover
+              background-color: #C2221A
+              border-top: 1px solid #260C0A
+              border-bottom: 1px solid #FF7267
+
+            &.selected
+              font-weight: bold
+
+            &.out-of-stock
+              display: block
+              background: transparent url(/images/out-of-stock.png) 0 0 repeat
+              color: #aaa
+              cursor: default
+
+            &.locked, &.locked:hover
+              background: none
+              color: #444
+              border-color: transparent
+              cursor: default
+
+              img
+                +opacity(0.5)

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 if Spree::Config.instance
   Spree::Config.set(:default_locale => 'it')
   Spree::Config.set(:allow_ssl_in_production => false)
@@ -24,11 +25,5 @@ end
   end
 end
 
-Image.attachment_definitions[:attachment][:styles] = {
-  :mini         =>  '100x100#',
-  :small        =>  '216x216#',
-  :product      =>  '320x320>',
-  :large        =>  '600x600>'
-}
-
 I18n.available_locales = [:it, :en]
+

@@ -14,7 +14,8 @@ gem 'spree_product_translations'
 gem 'spree_simple_product_translations'
 gem 'deface'
 gem "spree_additional_calculators"
+gem 'spree_variant_options', '0.2.0'
 
 group :development do
-  gem 'active_reload'
+  # gem 'active_reload'
 end

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111011223313) do
+ActiveRecord::Schema.define(:version => 20111022101259) do
 
   create_table "additional_calculator_rates", :force => true do |t|
     t.integer  "calculator_id",                                                                :null => false
@@ -220,6 +221,10 @@ ActiveRecord::Schema.define(:version => 20111011223313) do
     t.string   "presentation"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "option_values_variants", :id => false, :force => true do |t|

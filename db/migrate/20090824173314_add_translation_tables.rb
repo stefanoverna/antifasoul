@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddTranslationTables < ActiveRecord::Migration
   def self.up
     Product.create_translation_table! :name => :string, :description => :text, :meta_description => :text, :meta_keywords => :text

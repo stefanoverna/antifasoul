@@ -13,6 +13,7 @@ body
 
   @import "header"
   @import "footer"
+  @import "breadcrumbs"
 
   #wrapper
     width: 960px
@@ -24,44 +25,29 @@ body
 body.two-col
 
   #wrapper
-
-
     @import "sidebar"
-
 
     #content
       float: left
       width: 960px - 200px - 20px
 
-      .clear
+body.one-col
+  #content
+    +background(linear-gradient(rgba(#171717, 0.8), #040404))
+    padding: 25px
+    border: 1px solid #1C1C1C
+    +border-radius(10px)
+    +box-shadow(black 0 5px 10px)
 
-      h1
-        font-size: 40px
-        font-family: Lobster
-        margin-bottom: 25px
-        text-align: center
+body
+  h1
+    font-size: 40px
+    font-family: Lobster
+    margin-bottom: 25px
+    text-align: center
 
-      .breadcrumbs
-        font-family: Lobster
-        font-size: 16px
-        margin-bottom: 10px
-        color: #ccc
-        text-align: center
+  @import "product_listing"
+  @import "product_details"
 
-        .clear
-          display: none
-
-        li
-          display: inline
-
-        a
-          color: #ccc
-          text-decoration: none
-          padding: 0px 5px
-
-          &:hover
-            color: #FF1F1C
-
-      @import "product_listing"
 
 

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreatePromotionRules < ActiveRecord::Migration
   def self.up
     create_table :promotion_rules do |t|

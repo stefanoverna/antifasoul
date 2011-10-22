@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateAdditionalCalculatorRates < ActiveRecord::Migration
   def self.up
     create_table :additional_calculator_rates do |t|

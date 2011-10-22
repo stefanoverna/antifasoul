@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'globalize3'
 
 ::Page.class_eval do

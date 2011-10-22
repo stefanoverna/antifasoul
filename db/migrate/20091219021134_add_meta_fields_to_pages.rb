@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddMetaFieldsToPages < ActiveRecord::Migration
   def self.up
     add_column :pages, :meta_keywords, :string

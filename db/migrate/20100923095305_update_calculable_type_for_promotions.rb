@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class UpdateCalculableTypeForPromotions < ActiveRecord::Migration
   def self.up
     Calculator.update_all("calculable_type = 'Promotion'", "calculable_type = 'Coupon'")

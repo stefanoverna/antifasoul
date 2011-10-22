@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class NameForPromotions < ActiveRecord::Migration
   def self.up
     add_column "promotions", "name", :string

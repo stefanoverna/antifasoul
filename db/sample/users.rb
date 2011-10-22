@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # see last line where we create an admin if there is none, asking for email and password
 def prompt_for_admin_password
   password = ask('Password [spree123]: ', String) do |q|

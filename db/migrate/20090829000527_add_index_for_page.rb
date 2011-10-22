@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AddIndexForPage < ActiveRecord::Migration
   def self.up
     add_index(:pages, :slug)
