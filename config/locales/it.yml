@@ -904,7 +904,7 @@ it:
   previous: "Indietro"
   price: "Prezzo"
   price_bucket: "Prezzo totale"
-  price_with_vat_included: "%{price} (inc. IVA)"
+  price_with_vat_included: "%{price}"
   problem_authorizing_card: "Problema di autorizzazione con la carta di credito"
   problem_capturing_card: "Problema di acquisizione della carta di credito"
   problems_processing_order: "Errore durante l'elaborazione dell'ordine"
