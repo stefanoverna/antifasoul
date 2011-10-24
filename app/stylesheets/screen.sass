@@ -38,6 +38,7 @@ body.one-col
     border: 1px solid #1C1C1C
     +border-radius(10px)
     +box-shadow(black 0 5px 10px)
+    +clearfix
 
 body
   h1
@@ -48,4 +49,82 @@ body
 
   @import "product_listing"
   @import "product_details"
+  @import "cart"
 
+  #errorExplanation
+    background-color: rgba(#520303, 0.7)
+    padding: 15px
+    +border-radius(10px)
+    margin-bottom: 15px
+
+    h2
+      font-size: 18px
+      font-family: Arial, Helvetica, sans-serif
+      margin-bottom: 5px
+
+#registration
+  h2
+    font-size: 25px
+    font-family: Lobster
+    margin-bottom: 15px
+
+#content
+  form
+    p
+      margin-bottom: 10px
+      +clearfix
+
+      label
+        width: 130px
+        float: left
+
+      input, select
+        width: 400px
+        float: left
+
+      &.checkbox
+        label
+          float: none
+        input
+          float: none
+          width: auto
+
+    legend
+      font-family: Lobster
+      font-size: 20px
+      padding-bottom: 15px
+
+    fieldset
+      margin-bottom: 20px
+
+#checkout-step-address
+  +clearfix
+
+  li
+    float: left
+    width: 25%
+
+    span
+      padding: 12px 0
+      border: 1px solid #363636
+      border-right-width: 0px
+      display: block
+      text-align: center
+      +background(linear-gradient(#171717, #040404))
+      text-decoration: none
+      color: white
+      font-weight: normal
+      font-family: Lobster
+      font-size: 20px
+      text-align: center
+
+    &:first-child span
+      +border-left-radius(10px)
+
+    &:last-child span
+      +border-right-radius(10px)
+      border-right-width: 1px
+
+  &.current-first span, &.current span, &.current-last span
+    background: black
+    color: #FF1F1C

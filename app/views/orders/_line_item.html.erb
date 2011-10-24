@@ -3,9 +3,9 @@
     <%- locals = {:item_form => item_form, :variant => variant, :line_item => line_item} %>
     <%= hook :cart_item_image, locals do %>
       <% if variant.images.length == 0 %>
-        <%= small_image(variant.product) %>
+        <%= mini_image(variant.product) %>
       <% else %>
-        <%=  image_tag variant.images.first.attachment.url(:small)   %>
+        <%=  image_tag variant.images.first.attachment.url(:mini)   %>
       <% end %>
     <% end %>
   </td>
@@ -32,7 +32,7 @@
       <%= format_price(product_price(line_item, :format_as_currency => false) * line_item.quantity) unless line_item.quantity.nil? %>
     <% end %>
   </td>
-  <td>
+  <td class="delete">
     <%= hook :cart_item_delete, locals do %>
       <%= link_to(image_tag('/images/admin/icons/delete.png'), '#', :class => 'delete') %>
     <% end %>
