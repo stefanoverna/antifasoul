@@ -3,3 +3,4 @@ public/assets/*
 .sass-cache
 tmp/
 .DS_Store
+backups/*

@@ -6,7 +6,7 @@
     <%= render(:partial => "shared/filters") if @taxon.children.empty? %>
   <% end %>
 <% end %>
-
+<%= @searcher.class.name %>
 <% if @taxon.children.empty? || !params[:keywords].blank? %>
   <%= hook :taxon_products do %>
     <%= render :partial => "shared/products", :locals => {:products => @products, :taxon => @taxon } %>

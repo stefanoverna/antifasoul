@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -81,6 +80,19 @@ ActiveRecord::Schema.define(:version => 20111022101259) do
 
   add_index "assets", ["viewable_id"], :name => "index_assets_on_viewable_id"
   add_index "assets", ["viewable_type", "type"], :name => "index_assets_on_viewable_type_and_type"
+
+  create_table "banners", :force => true do |t|
+    t.integer  "position"
+    t.string   "tagline"
+    t.string   "target_url"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "visible"
+  end
 
   create_table "calculators", :force => true do |t|
     t.string   "type"
@@ -262,8 +274,8 @@ ActiveRecord::Schema.define(:version => 20111022101259) do
     t.integer  "page_id"
     t.string   "locale"
     t.string   "meta_description"
-    t.text     "body"
     t.string   "meta_keywords"
+    t.text     "body"
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -372,9 +384,9 @@ ActiveRecord::Schema.define(:version => 20111022101259) do
   create_table "product_translations", :force => true do |t|
     t.integer  "product_id"
     t.string   "locale"
-    t.text     "description"
     t.text     "meta_description"
     t.text     "meta_keywords"
+    t.text     "description"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -383,7 +395,7 @@ ActiveRecord::Schema.define(:version => 20111022101259) do
   add_index "product_translations", ["product_id"], :name => "index_product_translations_on_product_id"
 
   create_table "products", :force => true do |t|
-    t.string   "name",                 :default => "", :null => false
+    t.string   "name",                 :default => "",    :null => false
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -394,7 +406,8 @@ ActiveRecord::Schema.define(:version => 20111022101259) do
     t.datetime "deleted_at"
     t.string   "meta_description"
     t.string   "meta_keywords"
-    t.integer  "count_on_hand",        :default => 0,  :null => false
+    t.integer  "count_on_hand",        :default => 0,     :null => false
+    t.boolean  "show_on_homepage",     :default => false
   end
 
   add_index "products", ["available_on"], :name => "index_products_on_available_on"

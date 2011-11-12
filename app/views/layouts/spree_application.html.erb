@@ -35,7 +35,7 @@ end
     </div>
   </div>
 
-  <div id="wrapper" class="container">
+  <div id="wrapper" class="container <%= controller_name %>">
 
     <% if Taxonomy.find_by_name("Categoria") %>
       <ul id="taxonomies" class="split-in-<%= Taxonomy.find_by_name("Categoria").root.children.count %>">

@@ -5,6 +5,9 @@ it:
   it: "Italiano"
   en: "Inglese"
 
+  ext_homepager:
+    show_on_homepage: "Mostra in Homepage"
+
   activerecord:
     attributes:
       page:
@@ -24,7 +27,7 @@ it:
       page:
         one: Pagina
         many: Pagine
-
+  banners: Banner
   page: Pagina
   pages: Pagine
   static_content:
@@ -1152,7 +1155,7 @@ it:
   shipped: "Spedita"
   shipping: "In consegna"
   shipping_address: "Indirizzo di consegna"
-  shipping_categories: "categoria di spedizione"
+  shipping_categories: "Categoria di spedizione"
   shipping_categories_description: "Modifica le categorie di spedizione deii prodotti"
   shipping_category: "Categoria di spedizione"
   shipping_cost: "Costi di spedizione"
