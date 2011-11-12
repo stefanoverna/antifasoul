@@ -260,7 +260,7 @@ it:
         last_name_begins_with: "Il Cognome inizia con"
         lastname: "Last Name"
         phone: 'Telefono'
-        state: "Stato"
+        state: "Provincia"
         zipcode: "CAP"
       checkout:
         bill_address:
@@ -269,7 +269,7 @@ it:
           firstname: "Nome"
           lastname: "Cognome"
           phone: "Telefono"
-          state: "Stato"
+          state: "Provincia"
           zipcode: "CAP"
         ship_address:
           address1: "Indirizzo Spedizione"
@@ -277,7 +277,7 @@ it:
           firstname: "Nome"
           lastname: "Cognome"
           phone: "Telefono"
-          state: "Stato"
+          state: "Provincia"
           zipcode: "CAP"
       country:
         iso: 'ISO'
@@ -1203,9 +1203,9 @@ it:
   start_date: "Valido da"
   state: "stato"
   state_based: "Basato su una regione"
-  state_setting_description: "Amministra l'elenco delle regioni e province abbiate ad ogni nazione."
-  states: "Regioni"
-  status: "Stato"
+  state_setting_description: "Amministra l'elenco delle regioni e province abbinate ad ogni nazione."
+  states: "Provincie"
+  status: "Provincia"
   stop: "Fine"
   store: "Negozio"
   street_address: "Indirizzo"
@@ -1261,7 +1261,7 @@ it:
   under_paid: "Sottopagato"
   units: "Unità"
   unrecognized_card_type: "Il tipo di scheda non è stata riconosciuta"
-  update: "Aggiorna carrello"
+  update: "Salva"
   update_password: "Aggiorna la mia password e login"
   updated_successfully: "Aggiornato con successo"
   updating: "In aggiornamento"
