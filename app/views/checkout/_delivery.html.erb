@@ -3,12 +3,17 @@
   <div class="inner">
     <div id="methods">
       <p class="field radios">
-        <% @order.rate_hash.each do |shipping_method| %>
-          <label>
-            <%= radio_button(:order, :shipping_method_id, shipping_method[:id]) %>
-            <%= shipping_method[:name] %> <%= number_to_currency shipping_method[:cost] %>
-          </label><br />
-        <% end %>
+        <ul>
+          <% @order.rate_hash.each do |shipping_method| %>
+            <li>
+              <label>
+                <%= radio_button(:order, :shipping_method_id, shipping_method[:id]) %>
+                <span class="name"><%= shipping_method[:name] %></span>
+                <span class="cost"><%= number_to_currency shipping_method[:cost] %></span>
+              </label>
+            </li>
+          <% end %>
+        </ul>
       </p>
     </div>
     <% if Spree::Config[:shipping_instructions] && @order.rate_hash.present? %>

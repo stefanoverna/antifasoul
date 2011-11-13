@@ -1,0 +1,103 @@
+#content
+  padding: 0
+  background: transparent
+  border-width: 0
+  +box-shadow(none)
+  +fix
+
+  .product-listing
+    li
+      width: 25%
+
+#checkout-summary
+  +background(linear-gradient(rgba(#171717, 0.8), #040404))
+  padding: 25px
+  border: 1px solid #1C1C1C
+  +border-radius(10px)
+  margin-bottom: 30px
+  width: 34%
+  width: 280px - 25px * 2 - 1px * 2
+  float: right
+  +box-shadow(black 0 5px 10px)
+  +pie-clearfix
+
+  h3
+    margin-top: 0
+
+  table
+    width: 100%
+
+    strong
+      font-weight: bold
+
+    td
+      padding: 3px
+      text-align: right
+
+    th
+      text-align: left
+
+    tr.separate-up
+      td, th
+        padding-top: 10px
+
+    tr.separate-down
+      td, th
+        padding-bottom: 10px
+
+form
+  +background(linear-gradient(rgba(#171717, 0.8), #040404))
+  padding: 25px
+  border: 1px solid #1C1C1C
+  +border-radius(10px)
+  margin-bottom: 30px
+  width: 660px - 25px * 2 - 1px * 2
+  margin-right: 20px
+  float: left
+  +box-shadow(black 0 5px 10px)
+  +pie-clearfix
+
+  fieldset#shipping_method
+    ul li
+      margin-bottom: 5px
+
+.progress-steps
+  +clearfix
+
+  li
+    float: left
+    width: 25%
+
+    span
+      padding: 12px 0
+      border: 1px solid #363636
+      border-right-width: 0px
+      display: block
+      text-align: center
+      +background(linear-gradient(#171717, #040404))
+      text-decoration: none
+      color: white
+      font-weight: normal
+      font-family: Lobster
+      font-size: 20px
+      text-align: center
+      color: #666
+
+      a
+        color: white
+        text-decoration: none
+
+        &:hover
+          text-decoration: underline
+
+    &:first-child span
+      +border-left-radius(10px)
+
+    &:last-child span
+      +border-right-radius(10px)
+      border-right-width: 1px
+
+    &.current-first span, &.current span, &.current-last span
+      background: black
+      color: #FF1F1C
+

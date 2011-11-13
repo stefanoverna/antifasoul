@@ -91,43 +91,14 @@ body
 
     legend
       font-family: Lobster
-      font-size: 20px
+      font-size: 25px
       padding-bottom: 15px
 
     fieldset
       margin-bottom: 20px
 
-#checkout-step-address
-  +clearfix
-
-  li
-    float: left
-    width: 25%
-
-    span
-      padding: 12px 0
-      border: 1px solid #363636
-      border-right-width: 0px
-      display: block
-      text-align: center
-      +background(linear-gradient(#171717, #040404))
-      text-decoration: none
-      color: white
-      font-weight: normal
-      font-family: Lobster
-      font-size: 20px
-      text-align: center
-
-    &:first-child span
-      +border-left-radius(10px)
-
-    &:last-child span
-      +border-right-radius(10px)
-      border-right-width: 1px
-
-  &.current-first span, &.current span, &.current-last span
-    background: black
-    color: #FF1F1C
+#wrapper.checkout
+  @import "checkout"
 
 #wrapper.home
   @import "homepage"
