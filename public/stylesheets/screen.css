@@ -575,11 +575,16 @@ body #header .inner .aside .search-box {
   padding: 15px;
 }
 /* line 52, ../../app/stylesheets/_header.sass */
+body #header .inner .aside .search-box select {
+  width: auto !important;
+}
+/* line 55, ../../app/stylesheets/_header.sass */
 body #header .inner .aside .cart-indicator {
   clear: right;
+  height: 32px;
   float: right;
 }
-/* line 56, ../../app/stylesheets/_header.sass */
+/* line 60, ../../app/stylesheets/_header.sass */
 body #header .inner .aside .cart-indicator a {
   color: white;
   line-height: 35px;
@@ -590,7 +595,7 @@ body #header .inner .aside .cart-indicator a {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 66, ../../app/stylesheets/_header.sass */
+/* line 70, ../../app/stylesheets/_header.sass */
 body #header .inner .aside .cart-indicator a:hover {
   text-decoration: underline;
 }
@@ -1300,7 +1305,23 @@ body #errorExplanation h2 {
 #wrapper.checkout #content .product-listing li {
   width: 25%;
 }
-/* line 12, ../../app/stylesheets/_checkout.sass */
+/* line 13, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #payment label {
+  display: inline;
+  width: auto;
+}
+/* line 17, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #payment label input {
+  display: inline;
+  padding-right: 10px;
+  float: none;
+  width: auto;
+}
+/* line 23, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #payment-methods {
+  display: none;
+}
+/* line 26, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1332,36 +1353,40 @@ body #errorExplanation h2 {
   display: table;
   clear: both;
 }
-/* line 24, ../../app/stylesheets/_checkout.sass */
+/* line 38, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary h3 {
   margin-top: 0;
 }
-/* line 27, ../../app/stylesheets/_checkout.sass */
+/* line 41, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table {
   width: 100%;
-}
-/* line 30, ../../app/stylesheets/_checkout.sass */
-#wrapper.checkout #checkout-summary table strong {
-  font-weight: bold;
-}
-/* line 33, ../../app/stylesheets/_checkout.sass */
-#wrapper.checkout #checkout-summary table td {
-  padding: 3px;
-  text-align: right;
-}
-/* line 37, ../../app/stylesheets/_checkout.sass */
-#wrapper.checkout #checkout-summary table th {
   text-align: left;
 }
-/* line 41, ../../app/stylesheets/_checkout.sass */
+/* line 45, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #checkout-summary table td, #wrapper.checkout #checkout-summary table th {
+  padding: 3px;
+}
+/* line 48, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #checkout-summary table th {
+  font-weight: bold;
+}
+/* line 52, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table tr.separate-up td, #wrapper.checkout #checkout-summary table tr.separate-up th {
   padding-top: 10px;
 }
-/* line 45, ../../app/stylesheets/_checkout.sass */
+/* line 56, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table tr.separate-down td, #wrapper.checkout #checkout-summary table tr.separate-down th {
   padding-bottom: 10px;
 }
-/* line 48, ../../app/stylesheets/_checkout.sass */
+/* line 59, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #checkout-summary table b {
+  font-weight: bold;
+}
+/* line 62, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #checkout-summary table .total {
+  text-align: right;
+}
+/* line 65, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout form {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1393,21 +1418,21 @@ body #errorExplanation h2 {
   display: table;
   clear: both;
 }
-/* line 61, ../../app/stylesheets/_checkout.sass */
+/* line 78, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout form fieldset#shipping_method ul li {
   margin-bottom: 5px;
 }
-/* line 64, ../../app/stylesheets/_checkout.sass */
+/* line 81, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 67, ../../app/stylesheets/_checkout.sass */
+/* line 84, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li {
   float: left;
   width: 25%;
 }
-/* line 71, ../../app/stylesheets/_checkout.sass */
+/* line 88, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li span {
   padding: 12px 0;
   border: 1px solid #363636;
@@ -1428,16 +1453,16 @@ body #errorExplanation h2 {
   text-align: center;
   color: #666666;
 }
-/* line 86, ../../app/stylesheets/_checkout.sass */
+/* line 103, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li span a {
   color: white;
   text-decoration: none;
 }
-/* line 90, ../../app/stylesheets/_checkout.sass */
+/* line 107, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li span a:hover {
   text-decoration: underline;
 }
-/* line 93, ../../app/stylesheets/_checkout.sass */
+/* line 110, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li:first-child span {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1452,7 +1477,7 @@ body #errorExplanation h2 {
   -khtml-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 96, ../../app/stylesheets/_checkout.sass */
+/* line 113, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li:last-child span {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -1468,10 +1493,15 @@ body #errorExplanation h2 {
   border-bottom-right-radius: 10px;
   border-right-width: 1px;
 }
-/* line 100, ../../app/stylesheets/_checkout.sass */
+/* line 117, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li.current-first span, #wrapper.checkout .progress-steps li.current span, #wrapper.checkout .progress-steps li.current-last span {
   background: black;
   color: #ff1f1c;
+}
+
+/* line 103, ../../app/stylesheets/screen.sass */
+table#cart-detail {
+  width: 100%;
 }
 
 /* line 1, ../../app/stylesheets/_homepage.sass */

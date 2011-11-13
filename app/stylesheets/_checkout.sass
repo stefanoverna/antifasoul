@@ -9,6 +9,20 @@
     li
       width: 25%
 
+#payment
+  label
+    display: inline
+    width: auto
+
+    input
+      display: inline
+      padding-right: 10px
+      float: none
+      width: auto
+
+#payment-methods
+  display: none
+
 #checkout-summary
   +background(linear-gradient(rgba(#171717, 0.8), #040404))
   padding: 25px
@@ -26,13 +40,12 @@
 
   table
     width: 100%
+    text-align: left
 
-    td
+    td, th
       padding: 3px
-      text-align: right
 
     th
-      text-align: left
       font-weight: bold
 
     tr.separate-up
@@ -42,6 +55,12 @@
     tr.separate-down
       td, th
         padding-bottom: 10px
+
+    b
+      font-weight: bold
+
+    .total
+      text-align: right
 
 form
   +background(linear-gradient(rgba(#171717, 0.8), #040404))

@@ -22,8 +22,8 @@
     <% end %>
   </tbody>
   <%= hook :order_details_subtotal do %>
-    <tbody id='subtotal' class="separate-up separate-down">
-      <tr class="total" id="subtotal-row">
+    <tbody id='subtotal' >
+      <tr class="total separate-up separate-down" id="subtotal-row">
         <td colspan="3"><b><%= t('subtotal') %>:</b></td>
         <td class="total"><span><%= number_to_currency @order.item_total %></span></td>
       </tr>
@@ -41,7 +41,7 @@
   <% end %>
   <%= hook :order_details_total do %>
     <tbody id='order-total'>
-      <tr class="total" class="separate-up">
+      <tr class="total separate-up">
         <td colspan="3"><b><%= t('order_total') %>:</b></td>
         <td class="total"><span id="order_total"><%= number_to_currency @order.total %></span></td>
       </tr>
