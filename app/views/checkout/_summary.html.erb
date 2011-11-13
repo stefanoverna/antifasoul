@@ -1,4 +1,6 @@
 <h3><%= t(:order_summary) %></h3>
+<%= render :partial => 'shared/order_details', :locals => {:order => order} %>
+<!--
 <table>
   <tbody>
     <tr class="separate-down">
@@ -19,3 +21,4 @@
     </tr>
   </tbody>
 </table>
+-->

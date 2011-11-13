@@ -22,6 +22,14 @@ GIT
       spree_core (>= 0.40.0)
 
 GIT
+  remote: git://github.com/spree/spree_paypal_express.git
+  revision: 073f2f814dd8f3ad2e66ddde2c7079d8c76e4d27
+  ref: 073f2f814dd8f3ad2e66ddde2c7079d8c76e4d27
+  specs:
+    spree_paypal_express (1.0.1)
+      spree_core (>= 0.40.3)
+
+GIT
   remote: git://github.com/spree/spree_static_content.git
   revision: aedc8fae68061a85b2501c1cf1ba25c57bf98c8d
   branch: v0.60.2
@@ -162,7 +170,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (~> 0.14.4)
-    rake (0.9.2)
+    rake (0.9.2.2)
     rd_find_by_param (0.1.1)
       activerecord (~> 3.0)
       activesupport (~> 3.0)
@@ -243,6 +251,7 @@ DEPENDENCIES
   spree_editor!
   spree_html_invoice!
   spree_i18n!
+  spree_paypal_express!
   spree_product_translations
   spree_simple_product_translations
   spree_static_content!

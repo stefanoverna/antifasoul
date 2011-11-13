@@ -1318,7 +1318,7 @@ body #errorExplanation h2 {
   border-radius: 10px;
   margin-bottom: 30px;
   width: 34%;
-  width: 228px;
+  width: 288px;
   float: right;
   -moz-box-shadow: black 0 5px 10px;
   -webkit-box-shadow: black 0 5px 10px;
@@ -1378,7 +1378,7 @@ body #errorExplanation h2 {
   -khtml-border-radius: 10px;
   border-radius: 10px;
   margin-bottom: 30px;
-  width: 608px;
+  width: 548px;
   margin-right: 20px;
   float: left;
   -moz-box-shadow: black 0 5px 10px;

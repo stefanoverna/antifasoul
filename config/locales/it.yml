@@ -529,7 +529,7 @@ it:
   capture: "accettare"
   card_code: "Codice della carta"
   card_details: "Dettagli Carta"
-  card_number: "Nummero della carta"
+  card_number: "Numero della carta"
   card_type_is: "Tipo della carta"
   cart: "Carrello"
   categories: "Categorie"
