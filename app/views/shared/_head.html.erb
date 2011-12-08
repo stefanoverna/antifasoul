@@ -3,8 +3,9 @@
 <%== meta_data_tags %>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
 <%== stylesheet_tags %>
+<%= stylesheet_tag('fancybox/fancybox', {}) %>
 <%= csrf_meta_tag %>
-<%= javascript_include_tag 'jquery-1.4.2.min', 'jquery.validate.min.js', 'rails', 'application', :cache => 'jquery-core' %>
+<%= javascript_include_tag 'jquery-1.4.2.min', 'jquery.validate.min.js', 'fancybox/easing', 'fancybox/mousewheel', 'fancybox/fancybox', 'rails', 'application', :cache => 'jquery-core' %>
 <% unless I18n.locale.to_s[0..1] == 'en' %>
   <%= javascript_include_tag ['localization/messages_', I18n.locale.to_s[0..1], '.js'].join %>
 <% end %>

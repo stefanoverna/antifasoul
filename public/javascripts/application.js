@@ -9,4 +9,18 @@
     });
 
   });
+
+	$("[data-fancybox]").live("click", function() {
+    console.log($(this).attr("data-fancybox"));
+    $.fancybox.open(
+      [{ href: $(this).attr("data-fancybox") }],
+      {
+        openEffect: 'elastic',
+        openEasing: 'easeOutBack',
+        closeEffect: 'elastic',
+        closeEasing: 'easeInBack'
+      }
+    );
+  });
+
 })(jQuery);

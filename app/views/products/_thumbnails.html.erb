@@ -1,8 +1,8 @@
 <!-- no need for thumnails unless there is more then one image -->
 <% if product.images.size > 1 %>
   <ul id="product-thumbnails" class="thumbnails">
-    <% product.images.each do |i| %>  
-      <li><%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product)) %></li>
+    <% product.images.each do |i| %>
+      <li><%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :"data-fancybox" => i.attachment.url(:large)) %></li>
     <% end %>
   </ul>
 <% end %>
@@ -17,10 +17,10 @@
     <% @variants.each do |v|
         checked = !has_checked && (v.available?)
         has_checked = true if checked
-        
-        if checked 
-          v.images.each do |i| %>  
-            <li><%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product)) %></li>
+
+        if checked
+          v.images.each do |i| %>
+            <li><%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :"data-fancybox" => i.attachment.url(:large)) %></li>
           <% end %>
         <% end %>
       <% end %>

@@ -1,5 +1,5 @@
-<% if image %> 
-  <%= image_tag image.attachment.url(:product) %>
+<% if image %>
+  <%= image_tag image.attachment.url(:product), :"data-fancybox" => image.attachment.url(:large) %>
 <% else %>
-  <%= product_image(@product) %>
+  <%= product_image(@product, :"data-fancybox" => (@product.images.any? ? @product.images.first.attachment.url(:large) : false)) %>
 <% end %>
