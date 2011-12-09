@@ -30,7 +30,7 @@
   +border-radius(10px)
   margin-bottom: 30px
   width: 34%
-  width: 340px - 25px * 2 - 1px * 2
+  width: 414px
   float: right
   +box-shadow(black 0 5px 10px)
   +pie-clearfix
@@ -68,15 +68,22 @@ form
   border: 1px solid #1C1C1C
   +border-radius(10px)
   margin-bottom: 30px
-  width: 600px - 25px * 2 - 1px * 2
+  width: 416px
   margin-right: 20px
   float: left
   +box-shadow(black 0 5px 10px)
   +pie-clearfix
 
+  p input[type="text"], p select
+    width: 280px
+
   fieldset#shipping_method
     ul li
       margin-bottom: 5px
+
+      .cost
+        padding-left: 15px
+        font-weight: bold
 
 .progress-steps
   +clearfix
