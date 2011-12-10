@@ -4,7 +4,7 @@
 
   <%= hook :product_taxons do %>
     <div>
-      <% products = @product.taxons.map{|t| t.active_products }.flatten.select{|p| p != @product }.compact[0..6] %>
+      <% products = @product.taxons.map{|t| t.active_products }.flatten.select{|p| p != @product }.compact[0...6] %>
       <%= render :partial => "shared/products", :locals => {:products => products} %>
     </div>
   <% end %>
