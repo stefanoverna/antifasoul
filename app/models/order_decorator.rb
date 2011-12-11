@@ -8,10 +8,6 @@ Order.class_eval do
     original_finalize!
   end
 
-  def suca
-    puts "SUCA"
-  end
-
 end
 
 
