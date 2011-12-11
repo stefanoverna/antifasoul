@@ -1,15 +1,15 @@
-Dear Customer,
+Gentile Acquirente,
 
-Your order has been shipped
+Il tuo ordine è stato inviato
 
 ============================================================
-Shipment Summary
+Riepilogo dell'ordine
 ============================================================
 <% for item in @shipment.line_items %>
 <%=item.variant.sku %> <%=item.variant.product.name%> <%= variant_options(item.variant) %> (<%=item.quantity%>)
 <% end %>
 ============================================================
 
-<%= "Tracking Information: #{@shipment.tracking}" if @shipment.tracking %>
+<%= "Informazioni di Tracking : #{@shipment.tracking}" if @shipment.tracking %>
 
-Thank you for your business.
+Grazie per avere acquistato su Antifasoul.it!

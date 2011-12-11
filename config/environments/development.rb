@@ -23,5 +23,8 @@ Antifasoul::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :host => "localhost", :port => 1025 }
 end
 

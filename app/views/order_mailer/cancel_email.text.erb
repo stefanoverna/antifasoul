@@ -1,9 +1,9 @@
-Dear Customer,
+Gentile Acquirente,
 
-Your order has been CANCELED.  Please retain this cancellation information for your records.
+il tuo ordine è stato CANCELLATO. Ti preghiamo di controllare e conservare le seguenti informazioni sull'ordine:
 
 ============================================================
-Order Summary [CANCELED]
+Riepilogo dell'Ordine [CANCELLATO]
 ============================================================
 <% for item in @order.line_items %>
 <%=item.variant.sku %> <%=item.variant.product.name%> <%= variant_options(item.variant) %> (<%=item.quantity%>) @ <%= number_to_currency item.price %> = <%= number_to_currency(item.price * item.quantity) %>
@@ -14,3 +14,5 @@ Subtotal: <%= number_to_currency @order.item_total %>
 <%= "#{adjustment.label}: #{number_to_currency adjustment.amount}"%>
 <% end %>
 Order Total: <%= number_to_currency @order.total %>
+============================================================
+
