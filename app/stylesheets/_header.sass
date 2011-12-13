@@ -3,7 +3,37 @@
   .inner
     width: 960px
     margin: 0px auto
+    position: relative
     +fix
+
+    div.languages
+      position: absolute
+      left: 304px
+      top: 90px
+      width: 120px
+      +clearfix
+
+      li
+        float: left
+        width: 20px
+
+        a
+          width: 16px
+          height: 11px
+          display: block
+          text-indent: -1000em
+
+          &.it
+            background: image-url("flags/it.png")
+
+          &.en
+            background: image-url("flags/us.png")
+
+          &.de
+            background: image-url("flags/de.png")
+
+          &.gr
+            background: image-url("flags/gr.png")
 
     h1
       margin-top: 10px
