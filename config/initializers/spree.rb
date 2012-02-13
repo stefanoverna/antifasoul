@@ -19,11 +19,11 @@ def euro_price_filter
   }
 end
 
-::Taxon.class_eval do
-  def applicable_filters
-    [euro_price_filter]
-  end
-end
+# ::Taxon.class_eval do
+#   def applicable_filters
+#     [euro_price_filter]
+#   end
+# end
 
-I18n.available_locales = [:it, :en]
+I18n.available_locales = [:it, :en, :gr, :de ]
 

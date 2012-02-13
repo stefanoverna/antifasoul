@@ -1,29 +1,29 @@
-<div class="sidebar-taxonomy">
-  <%= form_tag '', :method => :get, :id => 'sidebar_products_search' do  %>
-    <% params[:search] ||= {} %>
-    <input type="hidden" name="per_page" value="<%= params[:per_page] %>"/>
-    <% filters = @taxon ? @taxon.applicable_filters : [ProductFilters.all_taxons] %>
-    <% filters.each do |filter| %>
-      <% labels = filter[:labels] || filter[:conds].map {|m,c| [m,m]} %>
-      <% next if labels.empty? %>
-        <h3><%= filter[:name] %></h3>
-        <ul style="list-style-type:none; padding-left: 0px;" class="filter_choices">
-          <% labels.each do |nm,val| %>
-            <% label = "#{filter[:name]}_#{nm}".gsub(/\s+/,'_') %>
-            <li class="nowrap">
-              <input type="checkbox"
-                     id="<%= label %>"
-                     name="search[<%= filter[:scope].to_s %>][]"
-                     value="<%= val %>"
-                     <%= params[:search][filter[:scope]] && params[:search][filter[:scope]].include?(val.to_s) ? "checked" : "" %> />
-              <label class="nowrap" for="<%= label %>"> <%= nm %> </label>
-            </li>
-          <% end %>
-        </ul>
-      <% end %>
-      <div class="footer">
-        <%= submit_tag t(:search), :name => nil %>
-      </div>
-  <% end %>
-</div>
+<%# <div class="sidebar-taxonomy"> %>
+<%#   <%= form_tag '', :method => :get, :id => 'sidebar_products_search' do  %1> %>
+<%#     <% params[:search] ||= {} %1> %>
+<%#     <input type="hidden" name="per_page" value="<%= params[:per_page] %1>"/> %>
+<%#     <% filters = @taxon ? @taxon.applicable_filters : [ProductFilters.all_taxons] %1> %>
+<%#     <% filters.each do |filter| %1> %>
+<%#       <% labels = filter[:labels] || filter[:conds].map {|m,c| [m,m]} %1> %>
+<%#       <% next if labels.empty? %1> %>
+<%#         <h3><%= filter[:name] %1></h3> %>
+<%#         <ul style="list-style-type:none; padding-left: 0px;" class="filter_choices"> %>
+<%#           <% labels.each do |nm,val| %1> %>
+<%#             <% label = "#{filter[:name]}_#{nm}".gsub(/\s+/,'_') %1> %>
+<%#             <li class="nowrap"> %>
+<%#               <input type="checkbox" %>
+<%#                      id="<%= label %1>" %>
+<%#                      name="search[<%= filter[:scope].to_s %1>][]" %>
+<%#                      value="<%= val %1>" %>
+<%#                      <%= params[:search][filter[:scope]] && params[:search][filter[:scope]].include?(val.to_s) ? "checked" : "" %1> /> %>
+<%#               <label class="nowrap" for="<%= label %1>"> <%= nm %1> </label> %>
+<%#             </li> %>
+<%#           <% end %1> %>
+<%#         </ul> %>
+<%#       <% end %1> %>
+<%#       <div class="footer"> %>
+<%#         <%= submit_tag t(:search), :name => nil %1> %>
+<%#       </div> %>
+<%#   <% end %1> %>
+<%# </div> %>
 
