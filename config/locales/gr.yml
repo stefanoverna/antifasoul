@@ -3,4 +3,9 @@
 
 gr:
   gr: "Greek"
+  number:
+    currency:
+      format:
+        unit: "€"
+
 

@@ -1,5 +1,9 @@
---- 
-de: 
+---
+de:
+  number:
+    currency:
+      format:
+        unit: "€"
   'no': "Nein"
   'yes': "Ja"
   5_biggest_spenders: "5 stärkste Käufer"
@@ -9,7 +13,7 @@ de:
   account: Konto
   account_updated: "Konto aktualisiert!"
   action: Aktion
-  actions: 
+  actions:
     cancel: Abbrechen
     create: Erstellen
     destroy: Löschen
@@ -18,9 +22,9 @@ de:
     new: Neu
     update: Aktualisieren
   active: "Aktiv"
-  activerecord: 
-    attributes: 
-      address: 
+  activerecord:
+    attributes:
+      address:
         address1: Adresse
         address2: "Adresse (Fortsetzung)"
         city: Stadt
@@ -32,8 +36,8 @@ de:
         phone: Telefonnummer
         state: "Bundesland"
         zipcode: PLZ
-      checkout: 
-        bill_address: 
+      checkout:
+        bill_address:
           address1: "Adresse"
           city: "Ort"
           firstname: "Vorname"
@@ -41,7 +45,7 @@ de:
           phone: "Telefonnummer"
           state: "Bundesland"
           zipcode: "PLZ"
-        ship_address: 
+        ship_address:
           address1: "Adresse"
           city: "Ort"
           firstname: "Vorname"
@@ -49,24 +53,24 @@ de:
           phone: "Telefonnummer"
           state: "Bundesland"
           zipcode: "PLZ"
-      country: 
+      country:
         iso: ISO
         iso3: ISO3
         iso_name: "ISO-Name"
         name: Name
         numcode: "ISO-Nummer"
-      creditcard: 
+      creditcard:
         cc_type: Typ
         month: Monat
         number: Nummer
         verification_value: Kartenprüfnummer
         year: Jahr
-      inventory_unit: 
+      inventory_unit:
         state: Bundesland
-      line_item: 
+      line_item:
         price: Preis
         quantity: Menge
-      order: 
+      order:
         checkout_complete: "Bestellung abgeschlossen"
         completed_at: "Abgeschlossen am"
         coupon_code: "Gutschein Code"
@@ -76,7 +80,7 @@ de:
         special_instructions: "Spezielle Anmerkungen"
         state: Bundesland
         total: Gesamt
-      product: 
+      product:
         available_on: "Erhältlich ab"
         cost_price: "Einkaufspreis"
         description: Beschreibung
@@ -85,48 +89,48 @@ de:
         on_hand: verfügbar
         shipping_category: "Versandkategorie"
         tax_category: "Steuerkategorie"
-      product_group: 
+      product_group:
         name: "Name"
         product_count: "Produktanzahl"
         product_scopes: "Produkteingrenzungen"
         products: "Produkte"
         url: "URL"
-      product_scope: 
+      product_scope:
         arguments: "Argumente"
         description: "Beschreibung"
-      promotion: 
+      promotion:
         code: "Code"
         description: "Beschreibung"
         expires_at: "Läuft ab am"
         name: "Name"
         starts_at: "Beginnt am"
         usage_limit: "Usage limit"
-      property: 
+      property:
         name: Name
         presentation: Darstellung
-      prototype: 
+      prototype:
         name: Name
-      return_authorization: 
+      return_authorization:
         amount: Anzahl
-      role: 
+      role:
         name: Name
-      state: 
+      state:
         abbr: Abkürzung
         name: Name
-      tax_category: 
+      tax_category:
         description: Beschreibung
         name: Name
-      tax_rate: 
+      tax_rate:
         amount: Rate
-      taxon: 
+      taxon:
         name: Name
         permalink: Permalink
         position: Posten
-      taxonomy: 
+      taxonomy:
         name: Name
-      user: 
+      user:
         email: E-Mail
-      variant: 
+      variant:
         cost_price: "Einkaufspreis"
         depth: Tiefe
         height: Höhe
@@ -134,86 +138,86 @@ de:
         sku: Artikelnummer
         weight: Gewicht
         width: Breite
-      zone: 
+      zone:
         description: Beschreibung
         name: Name
-    models: 
-      address: 
+    models:
+      address:
         one: Adresse
         other: Adressen
-      cheque_payment: 
+      cheque_payment:
         one: Scheckzahlung
         other: Scheckzahlungen
-      country: 
+      country:
         one: Land
         other: Länder
-      creditcard: 
+      creditcard:
         one: Kreditkarte
         other: Kreditkarten
-      creditcard_payment: 
+      creditcard_payment:
         one: Kreditkartenzahlung
         other: Kreditkartenzahlungen
-      creditcard_txn: 
+      creditcard_txn:
         one: Kreditkarten-Transaktion
         other: Kreditkarten-Transaktionen
-      inventory_unit: 
+      inventory_unit:
         one: Inventarnummer
         other: Inventarnummern
-      line_item: 
+      line_item:
         one: Einzelposten
         other: Einzelposten
-      order: 
+      order:
         one: Bestellung
         other: Bestellungen
-      payment: 
+      payment:
         one: Bezahlung
         other: Bezahlungen
-      product: 
+      product:
         one: Produkt
         other: Produkte
-      product_group: 
+      product_group:
         one: "Produktgruppe"
         other: "Produktgruppen"
-      property: 
+      property:
         one: Eigenschaft
         other: Eigenschaften
-      prototype: 
+      prototype:
         one: Prototyp
         other: Prototypen
-      return_authorization: 
+      return_authorization:
         one: Return Authorization
         other: Return Authorizations
-      role: 
+      role:
         one: Rolle
         other: Rollen
-      shipment: 
+      shipment:
         one: Lieferung
         other: Lieferungen
-      shipping_category: 
+      shipping_category:
         one: "Versandkategorie"
         other: "Versandkategorien"
-      state: 
+      state:
         one: Bundesland
         other: Bundesländer
-      tax_category: 
+      tax_category:
         one: "Steuerklasse"
         other: "Steuerklassen"
-      tax_rate: 
+      tax_rate:
         one: "Steuersatz"
         other: "Steuersätze"
-      taxon: 
+      taxon:
         one: Taxon
         other: Taxons
-      taxonomy: 
+      taxonomy:
         one: Klassifikation
         other: Klassifikationen
-      user: 
+      user:
         one: Benutzer
         other: Benutzer
-      variant: 
+      variant:
         one: Variante
         other: Varianten
-      zone: 
+      zone:
         one: Zone
         other: Zonen
   add: "Hinzufügen"
@@ -247,10 +251,10 @@ de:
   alternative_phone: "Alternative Telefonnummer"
   amount: Summe
   analytics_trackers: Analytics Trackers
-  api: 
+  api:
     access: "API Access"
     clear_key: "Clear API key"
-    errors: 
+    errors:
       invalid_event: "Invalid event name, valid names are %{events}"
       invalid_event_for_object: "Valid event name but not allowed for this object, valid names are %{events}"
       missing_event: "No event name supplied"
@@ -400,11 +404,11 @@ de:
   enter_password_to_confirm: "(Wir benötigen Ihr aktuelles Passwort um die Änderungen zu bestätigen.)"
   environment: "Umgebung"
   error: Fehler
-  errors: 
-    messages: 
+  errors:
+    messages:
       could_not_create_taxon: "Could not create taxon"
       no_shipping_methods_available: "Für diese Region sind keine Liefermethoden verfügbar. Bitte wählen Sie eine anderen Region aus."
-  errors_prohibited_this_record_from_being_saved: 
+  errors_prohibited_this_record_from_being_saved:
     one: "1 Prüfung ist fehlgeschlagen"
     other: "%{count} Prüfungen sind fehlgeschlagen"
   event: Ereignis
@@ -477,8 +481,8 @@ de:
   item: Artikel
   item_description: Artikelbeschreibung
   item_total: "Artikel gesamt"
-  item_total_rule: 
-    operators: 
+  item_total_rule:
+    operators:
       gt: größer als
       gte: größer als oder gleich
   items: "Posten"
@@ -576,7 +580,7 @@ de:
   not: nicht
   not_shown: "Nicht angezeigt"
   note: Notiz
-  notice_messages: 
+  notice_messages:
     option_type_removed: "Succesfully removed option type."
     product_cloned: "Product has been cloned"
     product_deleted: "Product has been deleted"
@@ -599,10 +603,10 @@ de:
   order_date: Bestelldatum
   order_details: "Details der Bestellung"
   order_email_resent: "Bestellbestätigung erneut versendet"
-  order_mailer: 
-    cancel_email: 
+  order_mailer:
+    cancel_email:
       subject: "Bestellung storniert"
-    confirm_email: 
+    confirm_email:
       subject: "Bestellbestätigung"
   order_not_in_system: "Diese Bestellnummer ist auf diesem System nicht gültig."
   order_number: "Bestellnummer"
@@ -610,7 +614,7 @@ de:
   order_processed_but_following_items_are_out_of_stock: "Ihre Bestellung wurde erstellt, folgende Artikel sind aber nicht auf Lager:"
   order_processed_successfully: "Ihre Bestellung wurde erfolgreich bearbeitet"
   order_state: # keys correspond to Checkout state names:
-    # keys correspond to Checkout state names: 
+    # keys correspond to Checkout state names:
     address: Adresse
     adjustments: "Anpassungen"
     awaiting_return: "erwartet Erstattung"
@@ -654,7 +658,7 @@ de:
   payment_methods_setting_description: "Einstellen, welche Zahlungsmethoden Kunden nutzen können"
   payment_processing_failed: "Die Bezahlung konnte nicht abgeschlossen werden, bitte überprüfen Sie Ihre Angaben."
   payment_state: "Zahlungsstatus"
-  payment_states: 
+  payment_states:
     balance_due: "Zahlung fällig"
     checkout: "Kasse"
     completed: "Abgeschlossen"
@@ -690,125 +694,125 @@ de:
   product_groups: "Produktgruppen"
   product_has_no_description: "Produkt hat keine Beschreibung"
   product_properties: "Produkt-Eigenschaften"
-  product_rule: 
+  product_rule:
     choose_products: Choose products
     label: "Order must contain %{select} of these products"
     match_all: all
     match_any: at least one
-    product_source: 
+    product_source:
       group: From product group
       manual: Manually choose
-  product_scopes: 
-    groups: 
-      price: 
+  product_scopes:
+    groups:
+      price:
         description: "Scopes for selecting products based on Price"
         name: Price
-      search: 
+      search:
         description: "Scopes for selecting products based on name, keywords and description of product"
         name: "Text search"
-      taxon: 
+      taxon:
         description: "Scopes for selecting products based on Taxons"
         name: Taxon
-      values: 
+      values:
         description: "Scopes for selecting products based on option and property values"
         name: Values
-    scopes: 
-      ascend_by_master_price: 
+    scopes:
+      ascend_by_master_price:
         name: "Aufsteigend nach Grundpreis"
-      ascend_by_name: 
+      ascend_by_name:
         name: "Aufsteigend nach Produktname"
-      ascend_by_updated_at: 
+      ascend_by_updated_at:
         name: "Aufsteigend nach Bearbeitungsdatum"
-      descend_by_master_price: 
+      descend_by_master_price:
         name: "Absteigend nach Grundpreis"
-      descend_by_name: 
+      descend_by_name:
         name: "Absteigend nach Produktname"
-      descend_by_popularity: 
+      descend_by_popularity:
         name: "Nach Beliebtheit sortieren (beliebteste zuerst)"
-      descend_by_updated_at: 
+      descend_by_updated_at:
         name: "Absteigend nach Bearbeitungsdatum"
-      in_name: 
-        args: 
+      in_name:
+        args:
           words: Begriffe
         description: "durch Leerzeichen oder Komma getrennt"
         name: "Produktname enthält"
         sentence: "Produktname enthält <em>%s</em>"
-      in_name_or_description: 
-        args: 
+      in_name_or_description:
+        args:
           words: Begriffe
         description: "durch Leerzeichen oder Komma getrennt"
         name: "Produktname oder -beschreibung enthält"
         sentence: "Produktname oder -beschreibung enthält <em>%s</em>"
-      in_name_or_keywords: 
-        args: 
+      in_name_or_keywords:
+        args:
           words: Begriffe
         description: "(separated by space or comma)"
         name: "Product name or meta keywords have following"
         sentence: name or keywords contain <em>%s</em>
-      in_taxons: 
-        args: 
+      in_taxons:
+        args:
           "taxon_names": "Taxon names"
         description: "Taxon names have to be separated by comma or space(eg. adidas,shoes)"
         name: "In taxons and all their descendants"
         sentence: in <em>%s</em> and all their descendants
-      master_price_gte: 
-        args: 
+      master_price_gte:
+        args:
           amount: Menge
         description: ""
         name: "Grundpreis größer oder gleich"
         sentence: "Preis größer oder gleich <em>%.2f</em>"
-      master_price_lte: 
-        args: 
+      master_price_lte:
+        args:
           amount: Menge
         description: ""
         name: "Grundpreis kleiner oder gleich"
         sentence: "Preis kleiner oder gleich <em>%.2f</em>"
-      price_between: 
-        args: 
+      price_between:
+        args:
           high: Hoch
           low: Niedrig
         description: ""
         name: "Preis zwischen"
         sentence: "Preis zwischen <em>%.2f</em> and <em>%.2f</em>"
-      taxons_name_eq: 
-        args: 
+      taxons_name_eq:
+        args:
           taxon_name: "Taxon name"
         description: "In specific taxon - without descendants"
         name: "In Taxon(without descendants)"
         sentence: in <em>%s</em>
-      with: 
-        args: 
+      with:
+        args:
           value: Value
         description: "Select specific products"
         name: Products with IDs
         sentence: with IDs <em>%s</em>
-      with_ids: 
-        args: 
+      with_ids:
+        args:
           ids: IDs
         description: "Select specific products"
         name: Products with IDs
         sentence: with IDs <em>%s</em>
-      with_option: 
-        args: 
+      with_option:
+        args:
           option: Option
         description: "Selects all products that have specified option(eg. color)"
         name: "With option"
         sentence: with option <em>%s</em>
-      with_option_value: 
-        args: 
+      with_option_value:
+        args:
           option: Option
           value: Value
         description: "Selects all products that have at least one variant with specified option and value(eg. color:red)"
         name: "With option and value"
         sentence: with option <em>%s</em> and value <em>%s</em>
-      with_property: 
-        args: 
+      with_property:
+        args:
           property: Eigenschaft
         description: "Wählt alle Produkte aus, die eine bestimmte Eigenschaft haben (z.B. Gewicht)"
         name: "Mit Eigenschaft"
         sentence: "mit Eigenschaft <em>%s</em>"
-      with_property_value: 
-        args: 
+      with_property_value:
+        args:
           property: "Eigenschaft"
           value: "Wert"
         description: "Selects all products that have at least one variant with specified property and value(eg. weight:10kg)"
@@ -817,21 +821,21 @@ de:
   products: Produkte
   products_with_zero_inventory_display: "Produkte mit einem Lagerbestand von Null werden %{not} angezeigt"
   promotion: Promotion
-  promotion_form: 
-    match_policies: 
+  promotion_form:
+    match_policies:
       all: Match any of these rules
       any: Match all of these rules
-  promotion_rule_types: 
-    first_order: 
+  promotion_rule_types:
+    first_order:
       description: Must be the customer's first order
       name: First order
-    item_total: 
+    item_total:
       description: Order total meets these criteria
       name: Item total
-    product: 
+    product:
       description: Order includes specified product(s)
       name: Product(s)
-    user: 
+    user:
       description: Available only to the specified users
       name: User
   promotions: Promotions
@@ -863,7 +867,7 @@ de:
   resend_confirmation_instructions: "Resend confirmation instructions"
   resend_unlock_instructions: "Resend unlock instructions"
   reset_password: "Mein Passwort zurücksetzen"
-  resource_controller: 
+  resource_controller:
     member_object_not_found: "Member object not found."
     successfully_created: "Anlegen erfolgreich!"
     successfully_removed: "Löschen erfolgreich!"
@@ -909,12 +913,12 @@ de:
   ship_address: Lieferadresse
   shipment: "Sendung"
   shipment_details: Lieferdetails
-  shipment_mailer: 
-    shipped_email: 
+  shipment_mailer:
+    shipped_email:
       subject: "Versand Benachrichtigung"
   shipment_number: "Sendungsnummer"
   shipment_state: Lieferstatus
-  shipment_states: 
+  shipment_states:
     backorder: Nachlieferung
     partial: Teillieferung
     pending: Austehend
@@ -961,7 +965,7 @@ de:
   sold: Ausverkauft
   sort_ordering: "Sort ordering"
   special_instructions: "Special Instructions"
-  spree: 
+  spree:
     date: Datum
     time: Uhrzeit
   spree_gateway_error_flash_for_checkout: "There was a problem with your payment information. Please check your information and try again."
@@ -1044,11 +1048,11 @@ de:
   user_account: "Benutzerkonto"
   user_created_successfully: "Benutzer erfolgreich angelegt"
   user_details: "Benutzer-Details"
-  user_rule: 
+  user_rule:
     choose_users: Choose users
   users: Benutzer
   validate_on_profile_create: Validate on profile create
-  validation: 
+  validation:
     cannot_be_less_than_shipped_units: "cannot be less than the number of shipped units."
     is_too_large: "is too large -- stock on hand cannot cover requested quantity!"
     must_be_int: "must be an integer"
