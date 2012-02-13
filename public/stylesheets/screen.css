@@ -723,6 +723,11 @@ body .breadcrumbs {
   color: #cccccc;
   text-align: center;
 }
+/* line 19, ../../app/stylesheets/_common.sass */
+.gr body .breadcrumbs {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+}
 /* line 8, ../../app/stylesheets/_breadcrumbs.sass */
 body .breadcrumbs .clear {
   display: none;
@@ -1108,6 +1113,11 @@ body .product-listing li .footer {
   font-size: 17px;
   color: white;
   position: relative;
+}
+/* line 19, ../../app/stylesheets/_common.sass */
+.gr body .product-listing li .footer {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
 }
 /* line 44, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li .footer a {
