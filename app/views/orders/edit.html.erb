@@ -25,11 +25,14 @@
   <% end %>
 
   <div id="actions">
-    <div class="right">
-      <%= link_to t("checkout"), checkout_path, :class => 'button checkout primary' %>
-    </div>
     <div class="left">
       <%= link_to t("update"), '#', :class => 'button checkout primary', :onclick => "$('form#updatecart').submit(); return false;" %>
+    </div>
+    <div class="center">
+      <%= link_to t("continue_shopping"), products_path, :class => 'button checkout primary continue_shopping' %>
+    </div>
+    <div class="right">
+      <%= link_to t("checkout"), checkout_path, :class => 'button checkout primary' %>
     </div>
   </div>
 
