@@ -1413,26 +1413,31 @@ body #errorExplanation h2 {
   zoom: 1;
 }
 /* line 9, ../../app/stylesheets/_checkout.sass */
+#wrapper.checkout #content .product-listing ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 12, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #content .product-listing li {
   width: 25%;
 }
-/* line 13, ../../app/stylesheets/_checkout.sass */
+/* line 16, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #payment label {
   display: inline;
   width: auto;
 }
-/* line 17, ../../app/stylesheets/_checkout.sass */
+/* line 20, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #payment label input {
   display: inline;
   padding-right: 10px;
   float: none;
   width: auto;
 }
-/* line 23, ../../app/stylesheets/_checkout.sass */
+/* line 26, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #payment-methods {
   display: none;
 }
-/* line 26, ../../app/stylesheets/_checkout.sass */
+/* line 29, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1464,40 +1469,40 @@ body #errorExplanation h2 {
   display: table;
   clear: both;
 }
-/* line 38, ../../app/stylesheets/_checkout.sass */
+/* line 41, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary h3 {
   margin-top: 0;
 }
-/* line 41, ../../app/stylesheets/_checkout.sass */
+/* line 44, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table {
   width: 100%;
   text-align: left;
 }
-/* line 45, ../../app/stylesheets/_checkout.sass */
+/* line 48, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table td, #wrapper.checkout #checkout-summary table th {
   padding: 3px;
 }
-/* line 48, ../../app/stylesheets/_checkout.sass */
+/* line 51, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table th {
   font-weight: bold;
 }
-/* line 52, ../../app/stylesheets/_checkout.sass */
+/* line 55, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table tr.separate-up td, #wrapper.checkout #checkout-summary table tr.separate-up th {
   padding-top: 10px;
 }
-/* line 56, ../../app/stylesheets/_checkout.sass */
+/* line 59, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table tr.separate-down td, #wrapper.checkout #checkout-summary table tr.separate-down th {
   padding-bottom: 10px;
 }
-/* line 59, ../../app/stylesheets/_checkout.sass */
+/* line 62, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table b {
   font-weight: bold;
 }
-/* line 62, ../../app/stylesheets/_checkout.sass */
+/* line 65, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout #checkout-summary table .total {
   text-align: right;
 }
-/* line 65, ../../app/stylesheets/_checkout.sass */
+/* line 68, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout form {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1529,30 +1534,30 @@ body #errorExplanation h2 {
   display: table;
   clear: both;
 }
-/* line 77, ../../app/stylesheets/_checkout.sass */
+/* line 80, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout form p input[type="text"], #wrapper.checkout form p select {
   width: 280px;
 }
-/* line 81, ../../app/stylesheets/_checkout.sass */
+/* line 84, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout form fieldset#shipping_method ul li {
   margin-bottom: 5px;
 }
-/* line 84, ../../app/stylesheets/_checkout.sass */
+/* line 87, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout form fieldset#shipping_method ul li .cost {
   padding-left: 15px;
   font-weight: bold;
 }
-/* line 88, ../../app/stylesheets/_checkout.sass */
+/* line 91, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 91, ../../app/stylesheets/_checkout.sass */
+/* line 94, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li {
   float: left;
   width: 25%;
 }
-/* line 95, ../../app/stylesheets/_checkout.sass */
+/* line 98, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li span {
   padding: 12px 0;
   border: 1px solid #363636;
@@ -1578,16 +1583,16 @@ body #errorExplanation h2 {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 110, ../../app/stylesheets/_checkout.sass */
+/* line 113, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li span a {
   color: white;
   text-decoration: none;
 }
-/* line 114, ../../app/stylesheets/_checkout.sass */
+/* line 117, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li span a:hover {
   text-decoration: underline;
 }
-/* line 117, ../../app/stylesheets/_checkout.sass */
+/* line 120, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li:first-child span {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1602,7 +1607,7 @@ body #errorExplanation h2 {
   -khtml-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 120, ../../app/stylesheets/_checkout.sass */
+/* line 123, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li:last-child span {
   -moz-border-radius-topright: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -1618,7 +1623,7 @@ body #errorExplanation h2 {
   border-bottom-right-radius: 10px;
   border-right-width: 1px;
 }
-/* line 124, ../../app/stylesheets/_checkout.sass */
+/* line 127, ../../app/stylesheets/_checkout.sass */
 #wrapper.checkout .progress-steps li.current-first span, #wrapper.checkout .progress-steps li.current span, #wrapper.checkout .progress-steps li.current-last span {
   background: black;
   color: #ff1f1c;
@@ -1640,10 +1645,15 @@ table#cart-detail {
   box-shadow: none;
 }
 /* line 9, ../../app/stylesheets/_homepage.sass */
+#wrapper.home #content .product-listing ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 12, ../../app/stylesheets/_homepage.sass */
 #wrapper.home #content .product-listing li {
   width: 25%;
 }
-/* line 12, ../../app/stylesheets/_homepage.sass */
+/* line 15, ../../app/stylesheets/_homepage.sass */
 #wrapper.home #content #banner-slideshow {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1669,7 +1679,7 @@ table#cart-detail {
   margin-bottom: 20px;
   position: relative;
 }
-/* line 23, ../../app/stylesheets/_homepage.sass */
+/* line 26, ../../app/stylesheets/_homepage.sass */
 #wrapper.home #content #banner-slideshow .banner {
   position: absolute;
   top: 0;
@@ -1677,7 +1687,7 @@ table#cart-detail {
   width: 100%;
   height: 100%;
 }
-/* line 30, ../../app/stylesheets/_homepage.sass */
+/* line 33, ../../app/stylesheets/_homepage.sass */
 #wrapper.home #content #banner-slideshow .banner .tagline {
   position: absolute;
   right: 10px;
@@ -1707,7 +1717,7 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 43, ../../app/stylesheets/_homepage.sass */
+/* line 46, ../../app/stylesheets/_homepage.sass */
 #wrapper.home #content #banner-slideshow .banner a {
   display: block;
   margin: 10px;
@@ -1720,7 +1730,7 @@ table#cart-detail {
   border-radius: 3px;
   height: 430px;
 }
-/* line 50, ../../app/stylesheets/_homepage.sass */
+/* line 53, ../../app/stylesheets/_homepage.sass */
 #wrapper.home #content #banner-slideshow .banner a img {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1742,14 +1752,19 @@ table#cart-detail {
   box-shadow: none;
 }
 /* line 8, ../../app/stylesheets/_product_details.sass */
+#product-details #content .product-listing ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 10, ../../app/stylesheets/_product_details.sass */
 #product-details #content .product-listing li {
   width: 16.5%;
 }
-/* line 11, ../../app/stylesheets/_product_details.sass */
+/* line 13, ../../app/stylesheets/_product_details.sass */
 #product-details #content .product-listing li .footer {
   font-size: 15px;
 }
-/* line 14, ../../app/stylesheets/_product_details.sass */
+/* line 16, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1778,13 +1793,13 @@ table#cart-detail {
   display: table;
   clear: both;
 }
-/* line 23, ../../app/stylesheets/_product_details.sass */
+/* line 25, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images {
   float: left;
   width: 30%;
   margin-right: 5%;
 }
-/* line 28, ../../app/stylesheets/_product_details.sass */
+/* line 30, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images img {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1797,11 +1812,11 @@ table#cart-detail {
   -o-box-shadow: black 0 5px 10px;
   box-shadow: black 0 5px 10px;
 }
-/* line 32, ../../app/stylesheets/_product_details.sass */
+/* line 34, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #main-image {
   margin-bottom: 15px;
 }
-/* line 37, ../../app/stylesheets/_product_details.sass */
+/* line 39, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #thumbnails ul {
   margin-bottom: 15px;
 }
@@ -1818,12 +1833,12 @@ table#cart-detail {
 #product-details .product-details #product-images #thumbnails ul {
   zoom: 1;
 }
-/* line 41, ../../app/stylesheets/_product_details.sass */
+/* line 43, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #thumbnails ul li {
   width: 33%;
   float: left;
 }
-/* line 46, ../../app/stylesheets/_product_details.sass */
+/* line 48, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #thumbnails ul li a {
   display: block;
   margin: 4px;
@@ -1831,7 +1846,7 @@ table#cart-detail {
   height: 79px;
   position: relative;
 }
-/* line 53, ../../app/stylesheets/_product_details.sass */
+/* line 55, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #thumbnails ul li a img {
   position: absolute;
   top: 0;
@@ -1839,14 +1854,14 @@ table#cart-detail {
   width: 100%;
   display: block;
 }
-/* line 60, ../../app/stylesheets/_product_details.sass */
+/* line 62, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #thumbnails ul li.selected img {
   -moz-box-shadow: red 0px 0px 10px;
   -webkit-box-shadow: red 0px 0px 10px;
   -o-box-shadow: red 0px 0px 10px;
   box-shadow: red 0px 0px 10px;
 }
-/* line 62, ../../app/stylesheets/_product_details.sass */
+/* line 64, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #thumbnails h4 {
   font-family: Lobster;
   font-size: 20px;
@@ -1858,18 +1873,18 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 68, ../../app/stylesheets/_product_details.sass */
+/* line 70, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-images #thumbnails h4 span {
   color: white;
 }
-/* line 71, ../../app/stylesheets/_product_details.sass */
+/* line 73, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-description {
   min-height: 30px;
   float: left;
   width: 35%;
   padding-right: 5%;
 }
-/* line 77, ../../app/stylesheets/_product_details.sass */
+/* line 79, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-description #product-properties {
   margin-top: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1887,7 +1902,7 @@ table#cart-detail {
 #product-details .product-details #product-description #product-properties {
   zoom: 1;
 }
-/* line 82, ../../app/stylesheets/_product_details.sass */
+/* line 84, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-description #product-properties dt {
   font-weight: bold;
   width: 50%;
@@ -1895,19 +1910,19 @@ table#cart-detail {
   padding: 5px 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* line 89, ../../app/stylesheets/_product_details.sass */
+/* line 91, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #product-description #product-properties dd {
   width: 50%;
   float: left;
   padding: 5px 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-/* line 96, ../../app/stylesheets/_product_details.sass */
+/* line 98, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form {
   float: left;
   width: 25%;
 }
-/* line 100, ../../app/stylesheets/_product_details.sass */
+/* line 102, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form button {
   background-color: #ee432e;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ee432e 0%), to(#c63929 50%));
@@ -1944,7 +1959,7 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 131, ../../app/stylesheets/_product_details.sass */
+/* line 133, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form button:hover {
   background-color: #f37873;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f37873 0%), to(#db504d 50%));
@@ -1956,7 +1971,7 @@ table#cart-detail {
   background-image: linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
   cursor: pointer;
 }
-/* line 141, ../../app/stylesheets/_product_details.sass */
+/* line 143, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form button:active {
   background-color: #d43c28;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d43c28 0%), to(#ad3224 50%));
@@ -1972,11 +1987,11 @@ table#cart-detail {
   -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
   box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
 }
-/* line 156, ../../app/stylesheets/_product_details.sass */
+/* line 158, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form button img {
   display: none;
 }
-/* line 159, ../../app/stylesheets/_product_details.sass */
+/* line 161, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form h2 {
   font-family: Lobster;
   font-size: 18px;
@@ -1988,11 +2003,11 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 165, ../../app/stylesheets/_product_details.sass */
+/* line 167, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form h2 .variant-options {
   padding-left: 15px;
 }
-/* line 168, ../../app/stylesheets/_product_details.sass */
+/* line 170, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form h2 .variant-options h3 {
   font-family: Lobster;
   font-size: 18px;
@@ -2003,7 +2018,7 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 174, ../../app/stylesheets/_product_details.sass */
+/* line 176, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form p.prices {
   font-family: Lobster;
   font-size: 18px;
@@ -2018,18 +2033,18 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 183, ../../app/stylesheets/_product_details.sass */
+/* line 185, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form p.prices > span.price {
   position: absolute;
   right: 0;
   top: 0;
   font-size: 25px;
 }
-/* line 189, ../../app/stylesheets/_product_details.sass */
+/* line 191, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form p.prices > span.price.unselected {
   color: #444444;
 }
-/* line 194, ../../app/stylesheets/_product_details.sass */
+/* line 196, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants .variant-option-type {
   font-family: Lobster;
   font-size: 15px;
@@ -2040,24 +2055,24 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 199, ../../app/stylesheets/_product_details.sass */
+/* line 201, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values {
   margin-bottom: 15px;
 }
-/* line 202, ../../app/stylesheets/_product_details.sass */
+/* line 204, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li {
   display: block;
   float: left;
   font-size: 14px;
   line-height: 14px;
 }
-/* line 208, ../../app/stylesheets/_product_details.sass */
+/* line 210, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li.clear {
   border: 0;
   float: none;
   clear: both;
 }
-/* line 213, ../../app/stylesheets/_product_details.sass */
+/* line 215, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li.clear-option a.clear-button {
   display: none;
   font-weight: bold;
@@ -2067,12 +2082,12 @@ table#cart-detail {
   border-top: 1px solid #555555;
   color: #adadad;
 }
-/* line 222, ../../app/stylesheets/_product_details.sass */
+/* line 224, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li.clear-option a.clear-button:hover {
   background-color: #434343;
   color: white;
 }
-/* line 226, ../../app/stylesheets/_product_details.sass */
+/* line 228, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li a {
   display: block;
   background-color: #222222;
@@ -2090,31 +2105,31 @@ table#cart-detail {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 240, ../../app/stylesheets/_product_details.sass */
+/* line 242, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.selected, #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.in-stock:hover {
   background-color: #c2221a;
   border-top: 1px solid #260c0a;
   border-bottom: 1px solid #ff7267;
 }
-/* line 245, ../../app/stylesheets/_product_details.sass */
+/* line 247, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.selected {
   font-weight: bold;
 }
-/* line 248, ../../app/stylesheets/_product_details.sass */
+/* line 250, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.out-of-stock {
   display: block;
   background: transparent url(/images/out-of-stock.png) 0 0 repeat;
   color: #aaaaaa;
   cursor: default;
 }
-/* line 254, ../../app/stylesheets/_product_details.sass */
+/* line 256, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.locked, #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.locked:hover {
   background: none;
   color: #444444;
   border-color: transparent;
   cursor: default;
 }
-/* line 260, ../../app/stylesheets/_product_details.sass */
+/* line 262, ../../app/stylesheets/_product_details.sass */
 #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.locked img, #product-details .product-details #cart-form #product-variants ul.variant-option-values li .option-value.locked:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
