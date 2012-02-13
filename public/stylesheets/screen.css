@@ -1248,8 +1248,8 @@ body #actions .center {
 /* line 48, ../../app/stylesheets/_cart.sass */
 body #actions .right {
   float: right;
-  margin-left: 20%;
-  width: 20%;
+  margin-left: 15%;
+  width: 25%;
 }
 /* line 53, ../../app/stylesheets/_cart.sass */
 body #actions .button {
