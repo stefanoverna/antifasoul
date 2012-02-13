@@ -4,6 +4,8 @@
 it:
   it: "Italiano"
   en: "Inglese"
+  gr: "Greco"
+  de: "Tedesco"
 
   ext_homepager:
     show_on_homepage: "Mostra in Homepage"
