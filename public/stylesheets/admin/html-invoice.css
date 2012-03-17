@@ -8,7 +8,7 @@ div.a4 {
 }
 div.header {
   width: 620px;
-  height: 150px;	
+  height: 150px;
 }
 div.address {
   width: 620px;
@@ -61,7 +61,7 @@ div.footer {
 }
 
 
-.title { font-weight: bold; color: #FF9933; font-size: 18px; }
+.title { font-weight: bold; color: red; font-size: 18px; }
 .bold { font-weight: bold; }
 .cell { ; }
 
