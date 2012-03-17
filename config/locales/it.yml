@@ -47,11 +47,11 @@ it:
   to: A
   add_new: Aggiungi nuovo
 
-  footer_left: Dati fiscali
-  footer_right: Altri dati fiscali
+  footer_left: HSCrew di Giorgio Angione, Firenze (FI)
+  footer_right: P.I. 05354390485
 
-  footer_left2: Uno due tre
-  footer_right2: Quattro cinque sei
+  footer_left2:
+  footer_right2:
 
   invoice:
     print: Stampa fattura
