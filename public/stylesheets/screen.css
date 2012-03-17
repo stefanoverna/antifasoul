@@ -657,6 +657,12 @@ body #footer .inner {
   margin: 0px auto;
 }
 /* line 9, ../../app/stylesheets/_footer.sass */
+body #footer .legal-stuff {
+  margin-top: 29px;
+  color: #857f7f;
+  text-align: center;
+}
+/* line 14, ../../app/stylesheets/_footer.sass */
 body #footer ul {
   background: rgba(0, 0, 0, 0.9);
   position: relative;
@@ -685,7 +691,7 @@ body #footer ul::after {
 body #footer ul {
   zoom: 1;
 }
-/* line 17, ../../app/stylesheets/_footer.sass */
+/* line 22, ../../app/stylesheets/_footer.sass */
 body #footer ul li {
   float: left;
   list-style-type: none;
@@ -698,18 +704,18 @@ body #footer ul li {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 24, ../../app/stylesheets/_footer.sass */
+/* line 29, ../../app/stylesheets/_footer.sass */
 body #footer ul li a {
   color: #ff1f1c;
   text-decoration: none;
   padding: 10px;
   display: block;
 }
-/* line 30, ../../app/stylesheets/_footer.sass */
+/* line 35, ../../app/stylesheets/_footer.sass */
 body #footer ul li a:hover {
   color: white;
 }
-/* line 33, ../../app/stylesheets/_footer.sass */
+/* line 38, ../../app/stylesheets/_footer.sass */
 body #footer ul li.logo {
   position: absolute;
   top: -40px;
