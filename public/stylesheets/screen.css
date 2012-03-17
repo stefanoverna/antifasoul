@@ -1065,25 +1065,25 @@ body .taxon h2 a {
   text-decoration: none;
 }
 /* line 2, ../../app/stylesheets/_common.sass */
-body .product-listing::before, body .product-listing::after {
+body .product-listing ul::before, body .product-listing ul::after {
   content: "";
   display: table;
 }
 /* line 6, ../../app/stylesheets/_common.sass */
-body .product-listing::after {
+body .product-listing ul::after {
   clear: both;
 }
 /* line 9, ../../app/stylesheets/_common.sass */
-body .product-listing {
+body .product-listing ul {
   zoom: 1;
 }
-/* line 15, ../../app/stylesheets/_product_listing.sass */
+/* line 16, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li {
   float: left;
   width: 33.333%;
   margin-bottom: 15px;
 }
-/* line 20, ../../app/stylesheets/_product_listing.sass */
+/* line 21, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li .inner {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1106,7 +1106,7 @@ body .product-listing li .inner {
   -o-box-shadow: black 0 5px 10px;
   box-shadow: black 0 5px 10px;
 }
-/* line 29, ../../app/stylesheets/_product_listing.sass */
+/* line 30, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li .inner:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 92, 98, 0.2)), color-stop(100%, rgba(193, 65, 65, 0.5)));
   background: -webkit-linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
@@ -1115,7 +1115,7 @@ body .product-listing li .inner:hover {
   background: -ms-linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
   background: linear-gradient(rgba(255, 92, 98, 0.2), rgba(193, 65, 65, 0.5));
 }
-/* line 32, ../../app/stylesheets/_product_listing.sass */
+/* line 33, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li .inner img {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1126,7 +1126,7 @@ body .product-listing li .inner img {
   max-width: 100%;
   display: block;
 }
-/* line 37, ../../app/stylesheets/_product_listing.sass */
+/* line 38, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li .footer {
   padding-top: 10px;
   font-family: Lobster;
@@ -1139,7 +1139,7 @@ body .product-listing li .footer {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 44, ../../app/stylesheets/_product_listing.sass */
+/* line 45, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li .footer a {
   color: white;
   text-decoration: none;
@@ -1152,7 +1152,7 @@ body .product-listing li .footer a {
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-/* line 52, ../../app/stylesheets/_product_listing.sass */
+/* line 53, ../../app/stylesheets/_product_listing.sass */
 body .product-listing li .footer a span {
   position: absolute;
   right: 10px;
