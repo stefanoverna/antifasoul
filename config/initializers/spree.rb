@@ -30,3 +30,13 @@ end
 
 I18n.available_locales = [:it, :en, :gr, :de ]
 
+module SpreePromo
+    class Engine < Rails::Engine
+          def self.activate
+            puts "=========================="
+            PromotionZone.register
+            Promotion.register_calculator(HalfShippingCalculator)
+          end
+          config.to_prepare &method(:activate).to_proc
+    end
+end

@@ -1383,3 +1383,9 @@ it:
   new_topic: Aggiungi una tipologia
   from: da
   message_from: Messaggio da
+
+  promotion_rule_types:
+    promotion_zone: "Zona"
+
+  half_free_shipping: "Spedizione al 50%"
+
