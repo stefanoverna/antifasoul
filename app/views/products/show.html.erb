@@ -6,11 +6,11 @@
   <div id="product-images">
     <div class="inner">
       <%= hook :product_images do %>
-        <div id="main-image">
-          <%= render 'image' %>
-        </div>
         <div id="thumbnails">
           <%= render 'thumbnails', :product => @product %>
+        </div>
+        <div id="main-image">
+          <%= render 'image' %>
         </div>
       <% end %>
     </div>
