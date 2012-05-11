@@ -18,6 +18,7 @@ gem "spree-homepager", :git => "git://github.com/pero-ict-solutions/spree-homepa
 gem 'spree_variant_options', '0.2.0'
 gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git", :ref => "073f2f814dd8f3ad2e66ddde2c7079d8c76e4d27"
 gem 'spree_easy_contact'
+gem 'airbrake'
 
 group :development do
   # gem 'active_reload'
