@@ -8,13 +8,14 @@
 
   .legal-stuff
     margin-top: 29px
-    color: #857F7F
+    color: #5b3630
     text-align: center
+    +text-shadow(rgba(black, 0.5) 0 -1px 0)
 
   ul
     background: rgba(black, 0.9)
     position: relative
-    padding-right: 140px + 20px
+    padding-right: 300px
     +border-radius(4px)
     +box-shadow(black 0 5px 10px)
     +fix
@@ -44,4 +45,18 @@
         height: 130px
         z-index: 20
         background: image-url("custom/footer_star.png") no-repeat center right
+
+      &.facebook
+        position: absolute
+        top: (50px - 35px) / 2
+        right: 258px
+        +replace-text-with-dimensions("custom/facebook.png")
+        display: block
+
+      &.mail
+        position: absolute
+        top: (50px - 35px) / 2
+        right: 180px
+        +replace-text-with-dimensions("custom/email.png")
+
 

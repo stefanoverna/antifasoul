@@ -1,16 +1,15 @@
 <div id="footer">
   <div class="inner">
-    <ul class="split-in-<%= Page.footer_links.count + 1 %>">
+    <ul class="split-in-<%= Page.footer_links.count %>">
       <% for page in Page.footer_links do %>
         <li><%= link_to page.title, page.link %></li>
       <% end %>
       <li class="facebook"><%= link_to "Facebook", "http://www.facebook.com/pages/AntifaSoul/339727419403750" %></li>
+      <li class="mail"><%= link_to "Mail", "http://www.facebook.com/pages/AntifaSoul/339727419403750" %></li>
       <li class="logo"><%= link_to "Antifa Soul", root_url %></li>
     </ul>
     <div class="legal-stuff">
-      <p>HSCrew di Giorgio Angione</p>
       <p>P.I. 05354390485</p>
-      <p>Firenze (FI)</p>
     </div>
   </div>
 </div>
