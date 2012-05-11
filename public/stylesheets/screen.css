@@ -494,6 +494,28 @@ body {
   font: 12px/1.35 Arial, Helvetica, sans-serif;
   color: white;
 }
+/* line 14, ../../app/stylesheets/screen.sass */
+body a {
+  color: white;
+}
+/* line 17, ../../app/stylesheets/screen.sass */
+body .flash.errors {
+  padding: 15px;
+  background-color: #7b0000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-family: Lobster;
+}
+/* line 19, ../../app/stylesheets/_common.sass */
+.gr body .flash.errors {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
+}
 /* line 3, ../../app/stylesheets/_header.sass */
 body #header .inner {
   width: 960px;
@@ -787,7 +809,7 @@ body .breadcrumbs a {
 body .breadcrumbs a:hover {
   color: #ff1f1c;
 }
-/* line 18, ../../app/stylesheets/screen.sass */
+/* line 28, ../../app/stylesheets/screen.sass */
 body #wrapper {
   width: 960px;
   margin: 0px auto;
@@ -1039,13 +1061,13 @@ body.two-col #wrapper #sidebar .sidebar-taxonomy ul a:hover {
 body.two-col #wrapper #sidebar .sidebar-taxonomy ul li:last-child a {
   border-bottom-width: 0;
 }
-/* line 30, ../../app/stylesheets/screen.sass */
+/* line 40, ../../app/stylesheets/screen.sass */
 body.two-col #wrapper #content {
   float: left;
   width: 740px;
 }
 
-/* line 35, ../../app/stylesheets/screen.sass */
+/* line 45, ../../app/stylesheets/screen.sass */
 body.one-col #content {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1074,7 +1096,7 @@ body.one-col #content:after {
   clear: both;
 }
 
-/* line 44, ../../app/stylesheets/screen.sass */
+/* line 54, ../../app/stylesheets/screen.sass */
 body h1 {
   font-size: 40px;
   font-family: Lobster;
@@ -1353,7 +1375,7 @@ body #actions .button:active {
   -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
   box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
 }
-/* line 54, ../../app/stylesheets/screen.sass */
+/* line 64, ../../app/stylesheets/screen.sass */
 body #errorExplanation {
   background-color: rgba(82, 3, 3, 0.7);
   padding: 15px;
@@ -1365,14 +1387,14 @@ body #errorExplanation {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-/* line 60, ../../app/stylesheets/screen.sass */
+/* line 70, ../../app/stylesheets/screen.sass */
 body #errorExplanation h2 {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
 }
 
-/* line 66, ../../app/stylesheets/screen.sass */
+/* line 76, ../../app/stylesheets/screen.sass */
 #registration h2 {
   font-size: 25px;
   font-family: Lobster;
@@ -1384,32 +1406,32 @@ body #errorExplanation h2 {
   font-weight: 700;
 }
 
-/* line 73, ../../app/stylesheets/screen.sass */
+/* line 83, ../../app/stylesheets/screen.sass */
 #content form p {
   margin-bottom: 10px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 77, ../../app/stylesheets/screen.sass */
+/* line 87, ../../app/stylesheets/screen.sass */
 #content form p label {
   width: 130px;
   float: left;
 }
-/* line 81, ../../app/stylesheets/screen.sass */
+/* line 91, ../../app/stylesheets/screen.sass */
 #content form p input, #content form p select {
   width: 400px;
   float: left;
 }
-/* line 86, ../../app/stylesheets/screen.sass */
+/* line 96, ../../app/stylesheets/screen.sass */
 #content form p.checkbox label {
   float: none;
 }
-/* line 88, ../../app/stylesheets/screen.sass */
+/* line 98, ../../app/stylesheets/screen.sass */
 #content form p.checkbox input {
   float: none;
   width: auto;
 }
-/* line 92, ../../app/stylesheets/screen.sass */
+/* line 102, ../../app/stylesheets/screen.sass */
 #content form legend {
   font-family: Lobster;
   font-size: 25px;
@@ -1420,7 +1442,7 @@ body #errorExplanation h2 {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 97, ../../app/stylesheets/screen.sass */
+/* line 107, ../../app/stylesheets/screen.sass */
 #content form fieldset {
   margin-bottom: 20px;
 }
@@ -1665,7 +1687,7 @@ body #errorExplanation h2 {
   color: #ff1f1c;
 }
 
-/* line 103, ../../app/stylesheets/screen.sass */
+/* line 113, ../../app/stylesheets/screen.sass */
 table#cart-detail {
   width: 100%;
 }
@@ -2171,7 +2193,7 @@ table#cart-detail {
   opacity: 0.5;
 }
 
-/* line 112, ../../app/stylesheets/screen.sass */
+/* line 122, ../../app/stylesheets/screen.sass */
 .pagination {
   font-family: Lobster;
   font-size: 15px;
@@ -2183,7 +2205,7 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 118, ../../app/stylesheets/screen.sass */
+/* line 128, ../../app/stylesheets/screen.sass */
 .pagination a {
   color: white;
   text-decoration: none;
