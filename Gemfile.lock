@@ -119,6 +119,7 @@ GEM
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
     highline (1.5.1)
+    honeypot-captcha (0.0.2)
     i18n (0.5.0)
     jquery-rails (0.2.6)
       rails (~> 3.0)
@@ -212,6 +213,9 @@ GEM
       will_paginate (= 3.0.pre2)
     spree_dash (0.60.1)
       spree_core (= 0.60.1)
+    spree_easy_contact (1.0.4)
+      honeypot-captcha
+      spree_core (>= 0.40.0)
     spree_product_translations (0.0.3)
       globalize3 (~> 0.1.0.beta)
       spree_core (>= 0.40.3)
@@ -248,6 +252,7 @@ DEPENDENCIES
   spree (= 0.60.1)
   spree-homepager!
   spree_additional_calculators
+  spree_easy_contact
   spree_editor!
   spree_html_invoice!
   spree_i18n!

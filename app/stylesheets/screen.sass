@@ -6,7 +6,7 @@
 @import "formalize"
 
 body
-  background: black image-url("custom/background.png") no-repeat top center
+  background: black image-url("custom/background.png") fixed no-repeat top center
   +text-shadow(black 0px -1px 0px)
   font: 12px/1.35 Arial, Helvetica, sans-serif
   color: white
@@ -14,11 +14,12 @@ body
   a
     color: white
 
-  .flash.errors
+  .flash
     padding: 15px
     background-color: #7b0000
     +border-radius(5px)
     margin-bottom: 15px
+    font-size: 16px
     +custom-font
 
   @import "header"
@@ -128,3 +129,15 @@ table#cart-detail
   a
     color: white
     text-decoration: none
+
+#contact-us
+  margin: 0 40px
+
+  .field
+    margin-bottom: 10px
+
+  label
+    +custom-font
+    font-size: 20px
+    margin-bottom: 5px
+    display: block

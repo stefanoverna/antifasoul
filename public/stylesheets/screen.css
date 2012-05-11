@@ -489,7 +489,7 @@ optgroup {
 
 /* line 8, ../../app/stylesheets/screen.sass */
 body {
-  background: black url('/images/custom/background.png?1319146344') no-repeat top center;
+  background: black url('/images/custom/background.png?1319146344') fixed no-repeat top center;
   text-shadow: black 0px -1px 0px;
   font: 12px/1.35 Arial, Helvetica, sans-serif;
   color: white;
@@ -499,7 +499,7 @@ body a {
   color: white;
 }
 /* line 17, ../../app/stylesheets/screen.sass */
-body .flash.errors {
+body .flash {
   padding: 15px;
   background-color: #7b0000;
   -moz-border-radius: 5px;
@@ -509,10 +509,11 @@ body .flash.errors {
   -khtml-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 15px;
+  font-size: 16px;
   font-family: Lobster;
 }
 /* line 19, ../../app/stylesheets/_common.sass */
-.gr body .flash.errors {
+.gr body .flash {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
@@ -666,26 +667,20 @@ body #header .inner .aside .cart-indicator a:hover {
 /* line 1, ../../app/stylesheets/_footer.sass */
 body #footer {
   padding: 50px 0px;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(91, 0, 0, 0)), color-stop(100%, #5b0000));
-  background: -webkit-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
-  background: -moz-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
-  background: -o-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
-  background: -ms-linear-gradient(rgba(91, 0, 0, 0), #5b0000);
-  background: linear-gradient(rgba(91, 0, 0, 0), #5b0000);
 }
-/* line 5, ../../app/stylesheets/_footer.sass */
+/* line 4, ../../app/stylesheets/_footer.sass */
 body #footer .inner {
   width: 960px;
   margin: 0px auto;
 }
-/* line 9, ../../app/stylesheets/_footer.sass */
+/* line 8, ../../app/stylesheets/_footer.sass */
 body #footer .legal-stuff {
   margin-top: 29px;
-  color: #5b3630;
+  color: rgba(255, 255, 255, 0.2);
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0;
 }
-/* line 15, ../../app/stylesheets/_footer.sass */
+/* line 14, ../../app/stylesheets/_footer.sass */
 body #footer ul {
   background: rgba(0, 0, 0, 0.9);
   position: relative;
@@ -714,7 +709,7 @@ body #footer ul::after {
 body #footer ul {
   zoom: 1;
 }
-/* line 23, ../../app/stylesheets/_footer.sass */
+/* line 22, ../../app/stylesheets/_footer.sass */
 body #footer ul li {
   float: left;
   list-style-type: none;
@@ -727,18 +722,18 @@ body #footer ul li {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 30, ../../app/stylesheets/_footer.sass */
+/* line 29, ../../app/stylesheets/_footer.sass */
 body #footer ul li a {
   color: #ff1f1c;
   text-decoration: none;
   padding: 10px;
   display: block;
 }
-/* line 36, ../../app/stylesheets/_footer.sass */
+/* line 35, ../../app/stylesheets/_footer.sass */
 body #footer ul li a:hover {
   color: white;
 }
-/* line 39, ../../app/stylesheets/_footer.sass */
+/* line 38, ../../app/stylesheets/_footer.sass */
 body #footer ul li.logo {
   position: absolute;
   top: -40px;
@@ -749,7 +744,7 @@ body #footer ul li.logo {
   z-index: 20;
   background: url('/images/custom/footer_star.png?1319158002') no-repeat center right;
 }
-/* line 49, ../../app/stylesheets/_footer.sass */
+/* line 48, ../../app/stylesheets/_footer.sass */
 body #footer ul li.facebook {
   position: absolute;
   top: 7.5px;
@@ -764,7 +759,7 @@ body #footer ul li.facebook {
   height: 35px;
   display: block;
 }
-/* line 56, ../../app/stylesheets/_footer.sass */
+/* line 55, ../../app/stylesheets/_footer.sass */
 body #footer ul li.mail {
   position: absolute;
   top: 7.5px;
@@ -809,7 +804,7 @@ body .breadcrumbs a {
 body .breadcrumbs a:hover {
   color: #ff1f1c;
 }
-/* line 28, ../../app/stylesheets/screen.sass */
+/* line 29, ../../app/stylesheets/screen.sass */
 body #wrapper {
   width: 960px;
   margin: 0px auto;
@@ -1061,13 +1056,13 @@ body.two-col #wrapper #sidebar .sidebar-taxonomy ul a:hover {
 body.two-col #wrapper #sidebar .sidebar-taxonomy ul li:last-child a {
   border-bottom-width: 0;
 }
-/* line 40, ../../app/stylesheets/screen.sass */
+/* line 41, ../../app/stylesheets/screen.sass */
 body.two-col #wrapper #content {
   float: left;
   width: 740px;
 }
 
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 46, ../../app/stylesheets/screen.sass */
 body.one-col #content {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(23, 23, 23, 0.8)), color-stop(100%, #040404));
   background: -webkit-linear-gradient(rgba(23, 23, 23, 0.8), #040404);
@@ -1096,7 +1091,7 @@ body.one-col #content:after {
   clear: both;
 }
 
-/* line 54, ../../app/stylesheets/screen.sass */
+/* line 55, ../../app/stylesheets/screen.sass */
 body h1 {
   font-size: 40px;
   font-family: Lobster;
@@ -1375,7 +1370,7 @@ body #actions .button:active {
   -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
   box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
 }
-/* line 64, ../../app/stylesheets/screen.sass */
+/* line 65, ../../app/stylesheets/screen.sass */
 body #errorExplanation {
   background-color: rgba(82, 3, 3, 0.7);
   padding: 15px;
@@ -1387,14 +1382,14 @@ body #errorExplanation {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-/* line 70, ../../app/stylesheets/screen.sass */
+/* line 71, ../../app/stylesheets/screen.sass */
 body #errorExplanation h2 {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
 }
 
-/* line 76, ../../app/stylesheets/screen.sass */
+/* line 77, ../../app/stylesheets/screen.sass */
 #registration h2 {
   font-size: 25px;
   font-family: Lobster;
@@ -1406,32 +1401,32 @@ body #errorExplanation h2 {
   font-weight: 700;
 }
 
-/* line 83, ../../app/stylesheets/screen.sass */
+/* line 84, ../../app/stylesheets/screen.sass */
 #content form p {
   margin-bottom: 10px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 87, ../../app/stylesheets/screen.sass */
+/* line 88, ../../app/stylesheets/screen.sass */
 #content form p label {
   width: 130px;
   float: left;
 }
-/* line 91, ../../app/stylesheets/screen.sass */
+/* line 92, ../../app/stylesheets/screen.sass */
 #content form p input, #content form p select {
   width: 400px;
   float: left;
 }
-/* line 96, ../../app/stylesheets/screen.sass */
+/* line 97, ../../app/stylesheets/screen.sass */
 #content form p.checkbox label {
   float: none;
 }
-/* line 98, ../../app/stylesheets/screen.sass */
+/* line 99, ../../app/stylesheets/screen.sass */
 #content form p.checkbox input {
   float: none;
   width: auto;
 }
-/* line 102, ../../app/stylesheets/screen.sass */
+/* line 103, ../../app/stylesheets/screen.sass */
 #content form legend {
   font-family: Lobster;
   font-size: 25px;
@@ -1442,7 +1437,7 @@ body #errorExplanation h2 {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 107, ../../app/stylesheets/screen.sass */
+/* line 108, ../../app/stylesheets/screen.sass */
 #content form fieldset {
   margin-bottom: 20px;
 }
@@ -1687,7 +1682,7 @@ body #errorExplanation h2 {
   color: #ff1f1c;
 }
 
-/* line 113, ../../app/stylesheets/screen.sass */
+/* line 114, ../../app/stylesheets/screen.sass */
 table#cart-detail {
   width: 100%;
 }
@@ -2193,7 +2188,7 @@ table#cart-detail {
   opacity: 0.5;
 }
 
-/* line 122, ../../app/stylesheets/screen.sass */
+/* line 123, ../../app/stylesheets/screen.sass */
 .pagination {
   font-family: Lobster;
   font-size: 15px;
@@ -2205,8 +2200,29 @@ table#cart-detail {
   font-family: "Open Sans Condensed";
   font-weight: 700;
 }
-/* line 128, ../../app/stylesheets/screen.sass */
+/* line 129, ../../app/stylesheets/screen.sass */
 .pagination a {
   color: white;
   text-decoration: none;
+}
+
+/* line 133, ../../app/stylesheets/screen.sass */
+#contact-us {
+  margin: 0 40px;
+}
+/* line 136, ../../app/stylesheets/screen.sass */
+#contact-us .field {
+  margin-bottom: 10px;
+}
+/* line 139, ../../app/stylesheets/screen.sass */
+#contact-us label {
+  font-family: Lobster;
+  font-size: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+/* line 19, ../../app/stylesheets/_common.sass */
+.gr #contact-us label {
+  font-family: "Open Sans Condensed";
+  font-weight: 700;
 }

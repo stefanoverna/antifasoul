@@ -114,6 +114,16 @@ ActiveRecord::Schema.define(:version => 20111022101259) do
 
   add_index "configurations", ["name", "type"], :name => "index_configurations_on_name_and_type"
 
+  create_table "contacts", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "order_number"
+    t.text     "message"
+    t.integer  "topic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "countries", :force => true do |t|
     t.string  "iso_name"
     t.string  "iso"
@@ -650,6 +660,13 @@ ActiveRecord::Schema.define(:version => 20111022101259) do
   end
 
   add_index "tokenized_permissions", ["permissable_id", "permissable_type"], :name => "index_tokenized_name_and_type"
+
+  create_table "topics", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "trackers", :force => true do |t|
     t.string   "environment"

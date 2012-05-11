@@ -1362,3 +1362,24 @@ it:
         subject: "Istruzioni per reimpostare la password"
       unlock_instructions:
         subject: "Istruzioni per sbloccare l'account"
+
+  contacts: Richieste di contatto
+  contact_us: Contattaci
+  name: Nome
+  email: Email
+  sent: Inviato
+  view: Mostra
+  message: Messaggio
+  order_number: Numero d'ordine
+  optionnal: opzionale
+  name_and_mail: Nome e email
+  contact_details: Dettagli contatto
+  contact_list: Lista contatti
+  send_message: Invia messaggio
+  message_sended: Messaggio inviato!
+  topics: Tipologie contatto
+  topic: Tipologia contatto
+  topics_description: "Configura le tipologie di contatto per il form, scegli l'email a cui inviare i messaggi"
+  new_topic: Aggiungi una tipologia
+  from: da
+  message_from: Messaggio da
