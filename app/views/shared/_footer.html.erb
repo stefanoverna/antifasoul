@@ -4,7 +4,7 @@
       <% for page in Page.footer_links do %>
         <li><%= link_to page.title, page.link %></li>
       <% end %>
-      <li class="facebook"><%= link_to "Facebook", "http://www.facebook.com/pages/AntifaSoul/339727419403750" %></li>
+      <li class="facebook"><%= link_to "Facebook", "http://www.facebook.com/pages/AntifaSoul/339727419403750", target: "_blank" %></li>
       <li class="mail"><%= link_to "Mail", contact_path %></li>
       <li class="logo"><%= link_to "Antifa Soul", root_url %></li>
     </ul>
