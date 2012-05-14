@@ -1154,7 +1154,7 @@ it:
   shipment_updated: "Spedizione aggiornata"
   shipments: "Spedizioni"
   shipped: "Spedita"
-  shipping: "In consegna"
+  shipping: "Spedizione"
   shipping_address: "Indirizzo di consegna"
   shipping_categories: "Categoria di spedizione"
   shipping_categories_description: "Modifica le categorie di spedizione deii prodotti"
