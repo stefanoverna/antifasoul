@@ -2,8 +2,8 @@
 if Spree::Config.instance
   Spree::Config.set(:default_locale => 'it')
   Spree::Config.set(:products_per_page => 9)
-  Spree::Config.set(:admin_products_per_page => 40)
-  Spree::Config.set(:orders_per_page => 40)
+  Spree::Config.set(:admin_products_per_page => 100)
+  Spree::Config.set(:orders_per_page => 100)
   Spree::Config.set(:allow_ssl_in_production => false)
   Spree::Config.set(:logo => '/images/custom/logo.png')
   Spree::Config.set(:html_invoice_logo_path => "/images/custom/logo.png")
