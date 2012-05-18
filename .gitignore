@@ -4,3 +4,4 @@ public/assets/*
 tmp/
 .DS_Store
 backups/*
+config/database.yml
