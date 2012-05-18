@@ -5,3 +5,4 @@ tmp/
 .DS_Store
 backups/*
 config/database.yml
+config/deploy.rb
