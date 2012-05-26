@@ -1,0 +1,20 @@
+<table class="thanks">
+  <tr>
+    <td class="cell" cellspan="2"> </td>
+    <td class="cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="thanks cell" cellspan="2">
+      <p><%=I18n.t("#{params[:template]}.thanks" , :order => @order)%></p>
+      <% iva = @order.adjustments.detect {|a| a.label == "IVA"} %>
+      <% if iva.nil? %>
+        <p>IVA non imponibile, art. 8 del D.p.r. 633/72</p>
+      <% end %>
+    </td>
+    <td class="cell">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="cell" cellspan="2"> </td>
+    <td class="cell">&nbsp;</td>
+  </tr>
+</table>
