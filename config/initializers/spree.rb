@@ -1,6 +1,7 @@
 # -*- encoding : utf-8 -*-
 if Spree::Config.instance
   Spree::Config.set(:default_locale => 'it')
+  Spree::Config.set(:default_country_id => 98)
   Spree::Config.set(:products_per_page => 9)
   Spree::Config.set(:admin_products_per_page => 100)
   Spree::Config.set(:orders_per_page => 100)
